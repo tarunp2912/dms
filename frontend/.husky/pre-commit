@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+../../env/bin/black dms/
+
+cd frontend/
+
+npm run precommit

@@ -1,0 +1,16 @@
+.DS_Store
+*.pyc
+*.egg-info
+*.swp
+tags
+dms/docs/current
+dms/public/frontend
+node_modules
+frontend/node_modules
+dms/public/node_modules
+dms/www/dms.html
+.yarn-integrity
+**/__pycache__
+node_modules/
+experiments
+*.sql
