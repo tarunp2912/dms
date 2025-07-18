@@ -1,0 +1,396 @@
+2025-07-15 06:26:54,343 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'fvq1caq4ge', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-15 06:27:01,422 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'fvq1caq4ge', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-15 06:27:04,980 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'fvq1caq4ge', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-15 06:27:13,674 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'g5comtrarv', 'cmd': 'dms.api.files.create_auth_token'}
+2025-07-15 06:31:39,095 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'fvq1caq4ge', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-15 09:11:20,981 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {}
+2025-07-15 14:48:55,116 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'mbkad8v6hc', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-16 00:36:59,181 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'order_by': 'modified 0', 'personal': '0', 'exclude_tag_list': '["OCR"]', 'cmd': 'dms.api.list.files'}
+2025-07-16 00:37:05,978 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'order_by': 'modified 0', 'personal': '0', 'exclude_tag_list': '["OCR"]', 'cmd': 'dms.api.list.files'}
+2025-07-16 00:54:23,156 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'email': 'unpaidwaterads@gmail.com', 'login': False, 'cmd': 'dms.api.product.send_otp'}
+2025-07-16 00:54:26,688 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'email': 'unpaidwaterads@gmail.com', 'login': False, 'cmd': 'dms.api.product.send_otp'}
+2025-07-16 00:54:34,539 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'email': 'hardikvyas2464@gmail.com', 'login': False, 'cmd': 'dms.api.product.send_otp'}
+2025-07-16 02:27:52,919 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '386b4bb2-1df1-425c-9117-57ccfca2ade9', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:27:53,151 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '386b4bb2-1df1-425c-9117-57ccfca2ade9', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:27:53,537 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '386b4bb2-1df1-425c-9117-57ccfca2ade9', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:27:53,797 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '386b4bb2-1df1-425c-9117-57ccfca2ade9', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:27:53,970 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '386b4bb2-1df1-425c-9117-57ccfca2ade9', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:27:54,233 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '386b4bb2-1df1-425c-9117-57ccfca2ade9', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:28:15,153 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '91408956-2d85-4202-b723-eea40e859a26', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:28:15,240 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '91408956-2d85-4202-b723-eea40e859a26', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:28:15,364 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '91408956-2d85-4202-b723-eea40e859a26', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:28:15,566 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '91408956-2d85-4202-b723-eea40e859a26', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:28:15,676 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '91408956-2d85-4202-b723-eea40e859a26', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:28:15,795 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '91408956-2d85-4202-b723-eea40e859a26', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'ocr': 'undefined', 'last_modified': '1752596717772', 'ocr_tag': '1', 'cmd': 'dms.api.files.upload_file'}
+2025-07-16 02:50:06,550 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'title': 'OCR', 'team': 'e1b2388lb7', 'parent': '', 'personal': 0, 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 03:19:14,684 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'dn5e1g2v16', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-16 03:37:12,082 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'title': 'OCR', 'team': 'e1b2388lb7', 'parent': '', 'personal': 0, 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 03:37:26,596 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'ndoctv6ucd', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-16 05:02:37,135 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'title': 'OCR', 'personal': False, 'parent': '', 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 05:02:54,313 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'title': 'OCR', 'personal': False, 'parent': '', 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 05:04:05,491 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'title': 'OCR', 'personal': False, 'parent': '', 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 05:08:57,475 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'title': 'OCR', 'personal': False, 'parent': '', 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 05:09:03,461 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'title': 'OCR', 'personal': False, 'parent': '', 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 05:09:23,924 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'team': 'e1b2388lb7', 'title': 'OCR', 'personal': False, 'parent': '', 'cmd': 'dms.api.files.create_folder'}
+2025-07-16 08:07:31,413 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-16 08:11:40,101 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-16 08:23:02,670 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 01:36:05,775 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 01:36:12,127 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 01:39:55,855 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 01:40:11,971 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 01:45:42,558 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 01:46:32,239 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 01:47:17,226 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 02:06:12,394 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 02:07:03,224 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["Picture_010_screenshot.png","IRCC.docx","IRCC.pdf","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf","Picture_010_screenshot.png","1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 02:24:46,629 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:24:46,674 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:24:47,237 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:24:47,312 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:25:02,142 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:35:25,205 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:35:25,271 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:25,989 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:26,078 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:28,105 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:28,213 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:29,451 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:29,515 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:30,847 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:31,056 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:32,186 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:32,354 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:33,827 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:33,964 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:35,777 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:35,880 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:37,605 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:37,750 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:38,165 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 02:36:38,242 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'cmd': 'dms.api.ocr.list'}
+2025-07-17 03:08:39,685 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["11746994.png","Picture_010_screenshot.png","IRCC.pdf","IRCC.pdf","IRCC.docx","IRCC.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 03:32:02,485 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["19s3aek1rb"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 04:28:29,142 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["salary_slip.pdf","Horra Bug Report.pdf","IRCC.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 04:28:56,753 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["image (3).png"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 04:29:32,012 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["1Password Emergency Kit A3-6Z299N-my.pdf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 06:42:05,934 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 06:46:16,417 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'is_active': 1, 'folders': 1, 'entity_name': '', 'personal': 0, 'cmd': 'dms.api.list.files'}
+2025-07-17 06:46:26,949 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity': 'lqdv8hb0gf', 'cmd': 'dms.api.permissions.get_shared_with_list'}
+2025-07-17 06:46:30,048 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity': 'lqdv8hb0gf', 'cmd': 'dms.api.permissions.get_shared_with_list'}
+2025-07-17 06:46:30,109 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity': 'lqdv8hb0gf', 'cmd': 'dms.api.permissions.get_shared_with_list'}
+2025-07-17 06:46:32,473 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity': 'lqdv8hb0gf', 'cmd': 'dms.api.permissions.get_shared_with_list'}
+2025-07-17 06:46:32,531 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity': 'lqdv8hb0gf', 'cmd': 'dms.api.permissions.get_shared_with_list'}
+2025-07-17 06:46:32,600 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity': 'lqdv8hb0gf', 'cmd': 'dms.api.permissions.get_shared_with_list'}
+2025-07-17 06:48:58,272 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["lqdv8hb0gf"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 06:50:19,811 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 06:55:02,277 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 06:59:21,727 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 07:05:07,764 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 07:05:28,951 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 07:20:06,425 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 07:26:45,222 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 07:50:00,828 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 07:56:29,579 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.ocr.move_ocr_to_trash'}
+2025-07-17 08:19:23,686 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.ocr.move_ocr_to_trash'}
+2025-07-17 08:22:54,645 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.ocr.move_ocr_to_trash'}
+2025-07-17 08:29:25,183 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["f2mrflu78j","clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.ocr.move_ocr_to_trash'}
+2025-07-17 08:36:09,891 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["f2mrflu78j","clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.ocr.move_ocr_to_trash'}
+2025-07-17 08:42:22,668 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["f2mrflu78j","clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.ocr.move_ocr_to_trash'}
+2025-07-17 08:48:22,181 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["f2mrflu78j","clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 09:14:23,060 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["5cdrc56s74","3mosid34t2","1s1f9ej99n","1n7324dcev","f2mrflu78j","clqv9rc9dv","gd8aodpjnn","onn3d4r659","lqdv8hb0gf","imeld3i782","6s3h41d9rg","5berk7g6k2"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-17 10:10:39,435 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': '6jh88dehgp', 'cmd': 'dms.api.files.get_file_content'}
+2025-07-18 01:34:48,626 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'headphone4.jpg', 'cmd': 'dms.api.files.get_thumbnail'}
+2025-07-18 01:34:48,627 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'IRCC.pdf', 'cmd': 'dms.api.files.get_thumbnail'}
+2025-07-18 01:34:52,019 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'IRCC (1).pdf', 'cmd': 'dms.api.files.get_thumbnail'}
+2025-07-18 01:34:52,034 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'Screenshot_15-7-2025_175617_172.27.209.48.jpeg', 'cmd': 'dms.api.files.get_thumbnail'}
+2025-07-18 01:34:52,039 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'IRCC (1) (1).pdf', 'cmd': 'dms.api.files.get_thumbnail'}
+2025-07-18 01:34:54,293 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'headphone4.jpg', 'cmd': 'dms.api.files.get_thumbnail'}
+2025-07-18 01:34:54,294 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_name': 'IRCC.pdf', 'cmd': 'dms.api.files.get_thumbnail'}
+2025-07-18 02:13:23,475 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["i99ouplqtj","d7rk7s4me2","cgsdec4ekv"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 02:16:58,272 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["cgsdec4ekv"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 02:27:18,563 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["vfps4a2osc"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 03:03:48,796 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6","pse4dkaumu","o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 03:04:09,803 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6","pse4dkaumu","o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 03:05:38,029 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6","pse4dkaumu","o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 03:28:00,218 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 04:37:17,564 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6","pse4dkaumu","o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 04:46:26,384 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6","pse4dkaumu","o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 04:56:05,148 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["u4vb7jbekk"]', 'team': 'e1b2388lb7', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 04:56:44,923 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 04:56:51,185 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["pse4dkaumu"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 05:02:53,601 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 05:14:21,282 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["7bd5s6afvl","saaaaccdc6","pse4dkaumu","o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 05:15:09,367 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["7bd5s6afvl"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 05:24:42,950 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["7bd5s6afvl"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 05:43:53,851 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["7bd5s6afvl"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 05:49:33,393 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 05:49:45,336 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["pse4dkaumu"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 06:00:14,839 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["7bd5s6afvl"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 06:00:30,133 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6","pse4dkaumu","o0h0bv3gv3"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 06:08:56,954 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["saaaaccdc6"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 06:36:50,477 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["p6o9he42tq"]', 'cmd': 'dms.api.files.remove_or_restore'}

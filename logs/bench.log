@@ -1,0 +1,1738 @@
+2025-07-14 14:55:46,897 DEBUG cd frappe-bench && python3 -m venv env
+2025-07-14 14:55:50,699 DEBUG cd frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-14 14:55:52,732 DEBUG cd frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-07-14 14:55:54,980 LOG Getting frappe
+2025-07-14 14:55:54,980 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-07-14 14:55:59,683 LOG Installing frappe
+2025-07-14 14:55:59,685 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hardikvyas/parag/frappe-bench/apps/frappe 
+2025-07-14 14:56:44,967 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && yarn install --check-files
+2025-07-14 14:57:16,340 DEBUG cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe:
+2025-07-14 14:57:16,617 WARNING cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-07-14 14:57:16,618 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-07-14 14:57:16,618 DEBUG cd frappe-bench && bench build
+2025-07-14 14:57:16,801 INFO /home/hardikvyas/parag/venv/bin/bench build
+2025-07-14 14:57:42,621 LOG setting up backups
+2025-07-14 14:57:42,637 LOG backups were set up
+2025-07-14 14:57:42,637 INFO Bench frappe-bench initialized
+2025-07-14 14:58:07,065 INFO /home/hardikvyas/parag/venv/bin/bench new-site xyz.com
+2025-07-15 00:10:02,744 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 00:10:03,221 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 00:10:03,251 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 00:10:03,327 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 00:10:03,368 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 00:10:37,649 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 00:10:38,319 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 00:10:38,409 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 00:10:38,475 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 00:10:38,481 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 00:14:38,528 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 00:14:39,047 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 00:14:39,053 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 00:14:39,112 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 00:14:39,145 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 00:33:12,152 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 00:33:12,640 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 00:33:12,668 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 00:33:12,732 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 00:33:12,812 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 00:39:32,588 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 00:39:33,119 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 00:39:38,220 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 00:39:38,227 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 00:39:38,284 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 05:56:34,540 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 05:56:35,238 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 05:56:35,248 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 05:56:35,263 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 05:56:35,269 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:00:01,642 INFO /home/hardikvyas/parag/venv/bin/bench --verbose --site all backup
+2025-07-15 06:09:28,034 INFO /home/hardikvyas/parag/venv/bin/bench new-site xyz.com
+2025-07-15 06:09:45,273 INFO /home/hardikvyas/parag/venv/bin/bench remove-site xyz.com
+2025-07-15 06:09:58,602 INFO /home/hardikvyas/parag/venv/bin/bench new-site hardik.com
+2025-07-15 06:11:51,954 INFO /home/hardikvyas/parag/venv/bin/bench get-app https://github.com/hardikvyas2468/dms --branch main
+2025-07-15 06:11:51,986 LOG Getting dms
+2025-07-15 06:11:51,986 DEBUG cd ./apps && git clone https://github.com/hardikvyas2468/dms --branch main --depth 1 --origin upstream
+2025-07-15 06:11:57,889 LOG Installing dms
+2025-07-15 06:11:57,890 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hardikvyas/parag/frappe-bench/apps/dms 
+2025-07-15 06:12:24,849 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && yarn install --check-files
+2025-07-15 06:13:41,026 DEBUG bench build --app dms
+2025-07-15 06:13:41,233 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-15 06:16:27,915 DEBUG cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe:
+2025-07-15 06:16:28,407 WARNING cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-07-15 06:16:28,407 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-07-15 06:16:50,369 INFO /home/hardikvyas/parag/venv/bin/bench use hardik.com
+2025-07-15 06:16:56,115 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:16:57,518 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:16:57,552 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:16:57,559 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:16:57,596 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:17:48,775 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:19:27,216 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:19:28,068 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:19:28,083 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:19:28,112 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:19:28,121 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:20:52,503 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:20:53,613 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:20:53,865 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:20:53,899 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:20:54,082 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:22:26,423 INFO /home/hardikvyas/parag/venv/bin/bench --site hardik.com install-app dms
+2025-07-15 06:22:34,080 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:22:34,911 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:22:34,943 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:22:35,033 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:22:35,074 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:23:24,451 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:23:25,351 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:23:25,436 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:23:25,630 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:23:25,654 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:32:11,184 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:32:09,204 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:32:09,277 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:32:09,388 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:32:09,475 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:48:15,094 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:48:17,367 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:48:17,418 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:48:17,561 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:48:17,677 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:51:43,288 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:51:44,848 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:51:45,142 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:51:45,407 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:51:45,452 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 06:58:03,769 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 06:58:05,602 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 06:58:05,740 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 06:58:05,818 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 06:58:05,969 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 07:00:38,784 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 07:00:39,906 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 07:00:39,908 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 07:00:40,023 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 07:00:40,291 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 07:06:37,643 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 07:06:39,105 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 07:06:39,248 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 07:06:39,333 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 07:06:39,776 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 07:14:12,539 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 07:14:13,445 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 07:14:13,460 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 07:14:13,557 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 07:14:13,561 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 07:19:35,372 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 07:19:36,229 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 07:19:36,232 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 07:19:36,270 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 07:19:36,694 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 07:39:04,760 INFO /home/hardikvyas/parag/venv/bin/bench restart
+2025-07-15 07:39:09,275 DEBUG cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe:
+2025-07-15 07:39:09,502 WARNING cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-07-15 07:39:09,503 WARNING /home/hardikvyas/parag/venv/bin/bench restart executed with exit code 1
+2025-07-15 07:39:12,834 INFO /home/hardikvyas/parag/venv/bin/bench restart
+2025-07-15 07:39:13,339 DEBUG cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe:
+2025-07-15 07:39:13,584 WARNING cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-07-15 07:39:13,584 WARNING /home/hardikvyas/parag/venv/bin/bench restart executed with exit code 1
+2025-07-15 07:39:18,354 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 07:39:18,965 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 07:39:18,983 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 07:39:19,028 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 07:39:19,028 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 07:51:30,650 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 07:51:32,077 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 07:51:32,114 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 07:51:32,158 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 07:51:32,219 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:00:28,998 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 08:00:29,675 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 08:00:29,727 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 08:00:29,731 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:00:29,756 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 08:10:05,297 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 08:10:06,195 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 08:10:06,355 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:10:06,362 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 08:10:06,421 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 08:15:31,708 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 08:15:32,808 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 08:15:32,903 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 08:15:33,020 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 08:15:33,087 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:29:31,151 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 08:29:31,744 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 08:29:31,748 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 08:29:31,836 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 08:29:31,842 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:41:19,734 INFO /home/hardikvyas/parag/venv/bin/bench update
+2025-07-15 08:41:21,091 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-07-15 08:41:33,470 WARNING /home/hardikvyas/parag/venv/bin/bench update executed with exit code 1
+2025-07-15 08:43:07,380 INFO /home/hardikvyas/parag/venv/bin/bench --site hardik.com upgrade
+2025-07-15 08:44:20,594 INFO /home/hardikvyas/parag/venv/bin/bench --version
+2025-07-15 08:44:41,360 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 08:44:41,929 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 08:44:41,940 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 08:44:42,032 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:44:42,042 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 08:46:21,641 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 08:46:19,265 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 08:46:19,311 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:46:19,319 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 08:46:19,358 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 08:57:09,164 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 08:57:10,232 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 08:57:10,289 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 08:57:10,304 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 08:57:10,706 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:03:34,696 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:03:35,179 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:03:35,187 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:03:35,209 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:03:35,345 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:07:46,282 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:07:47,117 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:07:47,136 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:07:47,244 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:07:47,266 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:10:43,229 INFO /home/hardikvyas/parag/venv/bin/bench update --patch
+2025-07-15 09:10:44,344 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-07-15 09:10:53,588 WARNING /home/hardikvyas/parag/venv/bin/bench update --patch executed with exit code 1
+2025-07-15 09:11:10,213 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:11:10,786 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:11:10,824 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:11:10,851 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:11:10,890 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:19:52,594 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:19:53,183 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:19:53,239 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:19:53,297 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:19:53,402 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:22:03,569 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:22:04,574 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:22:04,605 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:22:04,627 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:22:05,214 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:23:41,146 INFO /home/hardikvyas/parag/venv/bin/bench restart
+2025-07-15 09:23:48,897 DEBUG cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe:
+2025-07-15 09:23:49,157 WARNING cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-07-15 09:23:49,158 WARNING /home/hardikvyas/parag/venv/bin/bench restart executed with exit code 1
+2025-07-15 09:23:59,743 INFO /home/hardikvyas/parag/venv/bin/bench restart
+2025-07-15 09:24:00,259 DEBUG cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe:
+2025-07-15 09:24:00,482 WARNING cd /home/hardikvyas/parag/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2025-07-15 09:24:00,482 WARNING /home/hardikvyas/parag/venv/bin/bench restart executed with exit code 1
+2025-07-15 09:24:25,301 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:24:25,814 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:24:25,842 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:24:25,866 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:24:25,960 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:33:18,222 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:33:18,848 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:33:18,896 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:33:18,923 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:33:18,927 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:34:01,898 INFO /home/hardikvyas/parag/venv/bin/bench update-reset
+2025-07-15 09:34:09,917 INFO /home/hardikvyas/parag/venv/bin/bench update --reset
+2025-07-15 09:34:12,777 WARNING /home/hardikvyas/parag/venv/bin/bench update --reset executed with exit code 1
+2025-07-15 09:34:56,592 INFO /home/hardikvyas/parag/venv/bin/bench drop-site xyz.com
+2025-07-15 09:35:11,863 INFO /home/hardikvyas/parag/venv/bin/bench drop-site xyz.com --force
+2025-07-15 09:35:28,548 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:35:29,161 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:35:29,202 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:35:29,354 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 09:35:29,359 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:35:45,404 INFO /home/hardikvyas/parag/venv/bin/bench update --reset
+2025-07-15 09:35:47,923 LOG pulling frappe
+2025-07-15 09:35:47,923 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-15
+2025-07-15 09:35:48,855 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git reset --hard upstream/version-15
+2025-07-15 09:35:50,080 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git reflog expire --all
+2025-07-15 09:35:50,091 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git gc --prune=all
+2025-07-15 09:35:50,599 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2025-07-15 09:35:51,424 LOG pulling dms
+2025-07-15 09:35:51,424 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git fetch --depth=1 --no-tags upstream main
+2025-07-15 09:35:52,459 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git reset --hard upstream/main
+2025-07-15 09:35:53,039 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git reflog expire --all
+2025-07-15 09:35:53,046 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git gc --prune=all
+2025-07-15 09:35:53,360 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && find . -name "*.pyc" -delete
+2025-07-15 09:35:55,189 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-15 09:35:56,270 LOG Installing frappe
+2025-07-15 09:35:56,273 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hardikvyas/parag/frappe-bench/apps/frappe 
+2025-07-15 09:36:02,682 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && yarn install --check-files
+2025-07-15 09:36:07,024 LOG Installing dms
+2025-07-15 09:36:07,025 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hardikvyas/parag/frappe-bench/apps/dms 
+2025-07-15 09:36:12,265 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && yarn install --check-files
+2025-07-15 09:40:09,034 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-15 09:40:09,720 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-15 09:40:09,723 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-15 09:40:09,753 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-15 09:40:09,754 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-15 12:35:59,700 INFO /usr/local/bin/bench build --app dms
+2025-07-15 12:41:25,580 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 12:41:36,912 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 12:41:47,561 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 12:42:01,516 INFO /usr/local/bin/bench start
+2025-07-15 12:42:02,604 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 12:42:02,627 INFO /usr/local/bin/bench schedule
+2025-07-15 12:42:02,730 INFO /usr/local/bin/bench watch
+2025-07-15 12:42:02,821 INFO /usr/local/bin/bench worker
+2025-07-15 13:22:54,825 INFO /usr/local/bin/bench build --app dms
+2025-07-15 13:24:49,790 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 13:24:57,491 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 13:25:06,765 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 13:25:15,538 INFO /usr/local/bin/bench start
+2025-07-15 13:25:16,345 INFO /usr/local/bin/bench worker
+2025-07-15 13:25:16,350 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 13:25:16,383 INFO /usr/local/bin/bench watch
+2025-07-15 13:25:16,401 INFO /usr/local/bin/bench schedule
+2025-07-15 13:31:17,641 INFO /usr/local/bin/bench build --app dms
+2025-07-15 13:32:35,407 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 13:32:50,536 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 13:33:00,808 INFO /usr/local/bin/bench start
+2025-07-15 13:33:01,524 INFO /usr/local/bin/bench worker
+2025-07-15 13:33:01,569 INFO /usr/local/bin/bench schedule
+2025-07-15 13:33:01,604 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 13:33:01,625 INFO /usr/local/bin/bench watch
+2025-07-15 13:39:27,770 INFO /usr/local/bin/bench build --app dms
+2025-07-15 13:40:42,559 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 13:40:46,638 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 13:40:55,306 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 13:41:00,891 INFO /usr/local/bin/bench start
+2025-07-15 13:41:01,432 INFO /usr/local/bin/bench watch
+2025-07-15 13:41:01,450 INFO /usr/local/bin/bench schedule
+2025-07-15 13:41:01,507 INFO /usr/local/bin/bench worker
+2025-07-15 13:41:01,674 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 13:50:39,957 INFO /usr/local/bin/bench build --app dms
+2025-07-15 13:51:57,371 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 13:52:03,326 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 13:52:10,357 INFO /usr/local/bin/bench start
+2025-07-15 13:52:10,921 INFO /usr/local/bin/bench schedule
+2025-07-15 13:52:10,991 INFO /usr/local/bin/bench worker
+2025-07-15 13:52:11,013 INFO /usr/local/bin/bench watch
+2025-07-15 13:52:11,026 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 13:52:21,051 INFO /usr/local/bin/bench start
+2025-07-15 13:52:21,648 INFO /usr/local/bin/bench schedule
+2025-07-15 13:52:21,695 INFO /usr/local/bin/bench watch
+2025-07-15 13:52:21,708 INFO /usr/local/bin/bench worker
+2025-07-15 13:52:21,721 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 14:12:15,169 INFO /usr/local/bin/bench build --app dms
+2025-07-15 14:13:24,046 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 14:13:29,997 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 14:13:37,855 INFO /usr/local/bin/bench start
+2025-07-15 14:13:38,504 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 14:13:38,552 INFO /usr/local/bin/bench worker
+2025-07-15 14:13:38,614 INFO /usr/local/bin/bench schedule
+2025-07-15 14:13:38,617 INFO /usr/local/bin/bench watch
+2025-07-15 14:17:09,857 INFO /usr/local/bin/bench build --app dms
+2025-07-15 14:18:17,592 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 14:18:28,798 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 14:18:36,642 INFO /usr/local/bin/bench start
+2025-07-15 14:18:37,120 INFO /usr/local/bin/bench worker
+2025-07-15 14:18:37,141 INFO /usr/local/bin/bench watch
+2025-07-15 14:18:37,223 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 14:18:37,249 INFO /usr/local/bin/bench schedule
+2025-07-15 14:28:18,509 INFO /usr/local/bin/bench build --app dms
+2025-07-15 14:30:03,609 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 14:30:06,680 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 14:30:14,091 INFO /usr/local/bin/bench start
+2025-07-15 14:30:14,621 INFO /usr/local/bin/bench worker
+2025-07-15 14:30:14,694 INFO /usr/local/bin/bench watch
+2025-07-15 14:30:14,785 INFO /usr/local/bin/bench schedule
+2025-07-15 14:30:14,807 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 14:31:14,126 INFO /usr/local/bin/bench build --app dms
+2025-07-15 14:32:36,904 INFO /usr/local/bin/bench build --app dms
+2025-07-15 14:35:56,586 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 14:36:02,939 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 14:36:22,544 INFO /usr/local/bin/bench start
+2025-07-15 14:36:23,116 INFO /usr/local/bin/bench watch
+2025-07-15 14:36:23,187 INFO /usr/local/bin/bench schedule
+2025-07-15 14:36:23,228 INFO /usr/local/bin/bench worker
+2025-07-15 14:36:23,420 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 14:45:59,569 INFO /usr/local/bin/bench build --app dms
+2025-07-15 14:47:10,907 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-15 14:47:51,913 INFO /usr/local/bin/bench --site all migrate
+2025-07-15 14:47:58,875 INFO /usr/local/bin/bench start
+2025-07-15 14:47:59,398 INFO /usr/local/bin/bench serve --port 8000
+2025-07-15 14:47:59,417 INFO /usr/local/bin/bench watch
+2025-07-15 14:47:59,428 INFO /usr/local/bin/bench schedule
+2025-07-15 14:47:59,655 INFO /usr/local/bin/bench worker
+2025-07-16 00:10:34,009 INFO /usr/local/bin/bench start
+2025-07-16 00:10:34,486 INFO /usr/local/bin/bench watch
+2025-07-16 00:10:34,503 INFO /usr/local/bin/bench worker
+2025-07-16 00:10:34,505 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 00:10:34,595 INFO /usr/local/bin/bench schedule
+2025-07-16 00:19:41,830 INFO /usr/local/bin/bench build --app dms
+2025-07-16 00:22:48,128 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 00:23:13,775 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 00:23:25,926 INFO /usr/local/bin/bench start
+2025-07-16 00:23:26,352 INFO /usr/local/bin/bench schedule
+2025-07-16 00:23:26,475 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 00:23:26,490 INFO /usr/local/bin/bench watch
+2025-07-16 00:23:26,489 INFO /usr/local/bin/bench worker
+2025-07-16 00:28:38,966 INFO /usr/local/bin/bench build --app dms
+2025-07-16 00:29:50,132 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 00:30:35,161 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 00:31:18,136 INFO /usr/local/bin/bench start
+2025-07-16 00:31:18,691 INFO /usr/local/bin/bench schedule
+2025-07-16 00:31:18,722 INFO /usr/local/bin/bench watch
+2025-07-16 00:31:18,725 INFO /usr/local/bin/bench worker
+2025-07-16 00:31:18,786 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 00:34:43,025 INFO /usr/local/bin/bench build --app dms
+2025-07-16 00:35:47,234 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 00:36:39,336 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 00:36:48,129 INFO /usr/local/bin/bench start
+2025-07-16 00:36:48,652 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 00:36:48,653 INFO /usr/local/bin/bench schedule
+2025-07-16 00:36:48,744 INFO /usr/local/bin/bench worker
+2025-07-16 00:36:48,799 INFO /usr/local/bin/bench watch
+2025-07-16 00:37:28,248 INFO /usr/local/bin/bench build --app dms
+2025-07-16 00:38:36,522 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 00:38:40,884 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 00:38:47,375 INFO /usr/local/bin/bench start
+2025-07-16 00:38:48,031 INFO /usr/local/bin/bench watch
+2025-07-16 00:38:48,125 INFO /usr/local/bin/bench worker
+2025-07-16 00:38:48,158 INFO /usr/local/bin/bench schedule
+2025-07-16 00:38:48,227 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 00:43:19,000 INFO /usr/local/bin/bench build --app dms
+2025-07-16 00:44:23,358 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 00:44:27,515 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 00:44:33,989 INFO /usr/local/bin/bench start
+2025-07-16 00:44:34,503 INFO /usr/local/bin/bench schedule
+2025-07-16 00:44:34,514 INFO /usr/local/bin/bench watch
+2025-07-16 00:44:34,596 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 00:44:34,614 INFO /usr/local/bin/bench worker
+2025-07-16 01:03:23,143 INFO /usr/local/bin/bench build --app dms
+2025-07-16 01:04:29,907 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 01:04:33,100 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 01:04:39,757 INFO /usr/local/bin/bench start
+2025-07-16 01:04:40,288 INFO /usr/local/bin/bench schedule
+2025-07-16 01:04:40,303 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 01:04:40,365 INFO /usr/local/bin/bench worker
+2025-07-16 01:04:40,476 INFO /usr/local/bin/bench watch
+2025-07-16 01:12:16,124 INFO /usr/local/bin/bench build --app dms
+2025-07-16 01:13:18,442 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 01:13:22,979 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 01:13:29,476 INFO /usr/local/bin/bench start
+2025-07-16 01:13:30,096 INFO /usr/local/bin/bench watch
+2025-07-16 01:13:30,103 INFO /usr/local/bin/bench schedule
+2025-07-16 01:13:30,195 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 01:13:30,198 INFO /usr/local/bin/bench worker
+2025-07-16 01:32:42,688 INFO /usr/local/bin/bench build --app dms
+2025-07-16 01:33:52,902 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 01:33:56,886 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 01:34:04,083 INFO /usr/local/bin/bench start
+2025-07-16 01:34:04,635 INFO /usr/local/bin/bench schedule
+2025-07-16 01:34:04,721 INFO /usr/local/bin/bench worker
+2025-07-16 01:34:04,735 INFO /usr/local/bin/bench watch
+2025-07-16 01:34:04,778 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 01:40:23,197 INFO /usr/local/bin/bench build --app dms
+2025-07-16 01:41:52,767 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 01:42:01,508 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 01:42:02,452 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 01:42:06,106 INFO /usr/local/bin/bench start
+2025-07-16 01:42:06,594 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 01:42:06,627 INFO /usr/local/bin/bench schedule
+2025-07-16 01:42:06,702 INFO /usr/local/bin/bench worker
+2025-07-16 01:42:06,704 INFO /usr/local/bin/bench watch
+2025-07-16 01:43:58,806 INFO /usr/local/bin/bench build --app dms
+2025-07-16 01:45:18,639 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 01:45:22,880 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 01:45:30,016 INFO /usr/local/bin/bench start
+2025-07-16 01:45:30,749 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 01:45:30,791 INFO /usr/local/bin/bench schedule
+2025-07-16 01:45:30,815 INFO /usr/local/bin/bench worker
+2025-07-16 01:45:30,896 INFO /usr/local/bin/bench watch
+2025-07-16 01:54:43,181 INFO /usr/local/bin/bench --site hardik.com migrate
+2025-07-16 01:54:46,550 INFO /usr/local/bin/bench start
+2025-07-16 01:54:47,053 INFO /usr/local/bin/bench schedule
+2025-07-16 01:54:47,119 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 01:54:47,140 INFO /usr/local/bin/bench watch
+2025-07-16 01:54:47,165 INFO /usr/local/bin/bench worker
+2025-07-16 01:56:22,784 INFO /usr/local/bin/bench build --app dms
+2025-07-16 01:57:43,652 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 01:57:52,396 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 01:57:59,038 INFO /usr/local/bin/bench start
+2025-07-16 01:57:59,575 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 01:57:59,693 INFO /usr/local/bin/bench schedule
+2025-07-16 01:57:59,705 INFO /usr/local/bin/bench watch
+2025-07-16 01:57:59,804 INFO /usr/local/bin/bench worker
+2025-07-16 02:14:28,181 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:14:48,494 INFO /usr/local/bin/bench start
+2025-07-16 02:14:49,170 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 02:14:49,203 INFO /usr/local/bin/bench worker
+2025-07-16 02:14:49,254 INFO /usr/local/bin/bench watch
+2025-07-16 02:14:49,362 INFO /usr/local/bin/bench schedule
+2025-07-16 02:15:15,367 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:16:13,634 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:18:30,327 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:19:37,498 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 02:19:47,090 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 02:19:51,029 INFO /usr/local/bin/bench start
+2025-07-16 02:19:51,555 INFO /usr/local/bin/bench watch
+2025-07-16 02:19:51,606 INFO /usr/local/bin/bench schedule
+2025-07-16 02:19:51,633 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 02:19:51,702 INFO /usr/local/bin/bench worker
+2025-07-16 02:21:20,758 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-16 02:21:21,260 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-16 02:21:21,284 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-16 02:21:21,308 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-16 02:21:21,445 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-16 02:26:06,228 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:27:17,981 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 02:27:24,792 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 02:27:31,279 INFO /usr/local/bin/bench start
+2025-07-16 02:27:31,886 INFO /usr/local/bin/bench watch
+2025-07-16 02:27:31,934 INFO /usr/local/bin/bench schedule
+2025-07-16 02:27:31,944 INFO /usr/local/bin/bench worker
+2025-07-16 02:27:31,994 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 02:35:48,764 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:36:54,525 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 02:37:01,007 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 02:37:05,428 INFO /usr/local/bin/bench start
+2025-07-16 02:37:06,267 INFO /usr/local/bin/bench worker
+2025-07-16 02:37:06,283 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 02:37:06,350 INFO /usr/local/bin/bench watch
+2025-07-16 02:37:06,463 INFO /usr/local/bin/bench schedule
+2025-07-16 02:42:43,212 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:43:56,728 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 02:44:19,924 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 02:44:23,381 INFO /usr/local/bin/bench start
+2025-07-16 02:44:23,912 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 02:44:23,987 INFO /usr/local/bin/bench watch
+2025-07-16 02:44:24,003 INFO /usr/local/bin/bench worker
+2025-07-16 02:44:24,039 INFO /usr/local/bin/bench schedule
+2025-07-16 02:47:42,965 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:48:57,758 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 02:49:02,895 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 02:49:09,689 INFO /usr/local/bin/bench start
+2025-07-16 02:49:10,292 INFO /usr/local/bin/bench worker
+2025-07-16 02:49:10,312 INFO /usr/local/bin/bench watch
+2025-07-16 02:49:10,318 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 02:49:10,462 INFO /usr/local/bin/bench schedule
+2025-07-16 02:51:42,418 INFO /usr/local/bin/bench build --app dms
+2025-07-16 02:52:59,781 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 02:53:08,372 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 02:53:11,907 INFO /usr/local/bin/bench start
+2025-07-16 02:53:11,991 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 02:53:12,035 INFO /usr/local/bin/bench worker
+2025-07-16 02:53:12,091 INFO /usr/local/bin/bench watch
+2025-07-16 02:53:12,126 INFO /usr/local/bin/bench schedule
+2025-07-16 03:02:12,982 INFO /usr/local/bin/bench build --app dms
+2025-07-16 03:03:25,268 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 03:03:33,462 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 03:03:37,478 INFO /usr/local/bin/bench start
+2025-07-16 03:03:38,036 INFO /usr/local/bin/bench watch
+2025-07-16 03:03:38,085 INFO /usr/local/bin/bench worker
+2025-07-16 03:03:38,139 INFO /usr/local/bin/bench schedule
+2025-07-16 03:03:38,213 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 03:14:50,094 INFO /usr/local/bin/bench build --app dms
+2025-07-16 03:16:10,803 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 03:16:20,288 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 03:16:24,569 INFO /usr/local/bin/bench start
+2025-07-16 03:16:25,146 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 03:16:25,153 INFO /usr/local/bin/bench schedule
+2025-07-16 03:16:25,240 INFO /usr/local/bin/bench worker
+2025-07-16 03:16:25,317 INFO /usr/local/bin/bench watch
+2025-07-16 03:29:36,702 INFO /usr/local/bin/bench build --app dms
+2025-07-16 03:30:40,559 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 03:30:47,248 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 03:30:50,838 INFO /usr/local/bin/bench start
+2025-07-16 03:30:51,676 INFO /usr/local/bin/bench schedule
+2025-07-16 03:30:51,694 INFO /usr/local/bin/bench worker
+2025-07-16 03:30:51,831 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 03:30:52,002 INFO /usr/local/bin/bench watch
+2025-07-16 04:47:52,368 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 04:49:06,653 INFO /home/hardikvyas/parag/venv/bin/bench --site all migrate
+2025-07-16 04:49:23,079 INFO /home/hardikvyas/parag/venv/bin/bench --site all clear-cache
+2025-07-16 04:49:25,544 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-16 04:49:26,098 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-16 04:49:26,117 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-16 04:49:26,132 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-16 04:49:26,212 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-16 04:55:49,672 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 04:57:10,902 INFO /home/hardikvyas/parag/venv/bin/bench --site all migrate
+2025-07-16 04:57:21,644 INFO /home/hardikvyas/parag/venv/bin/bench --site all clear-cache
+2025-07-16 04:57:24,693 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-16 04:57:25,161 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-16 04:57:25,190 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-16 04:57:25,277 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-16 04:57:25,299 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-16 05:00:42,550 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 05:01:55,066 INFO /home/hardikvyas/parag/venv/bin/bench --site all clear-cache
+2025-07-16 05:01:59,909 INFO /home/hardikvyas/parag/venv/bin/bench --site all migrate
+2025-07-16 05:02:10,085 INFO /home/hardikvyas/parag/venv/bin/bench --site all clear-cache
+2025-07-16 05:02:19,687 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-16 05:02:14,596 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-16 05:02:14,609 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-16 05:02:14,615 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-16 05:02:14,713 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-16 05:07:10,237 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 05:08:23,162 INFO /home/hardikvyas/parag/venv/bin/bench --site all migrate
+2025-07-16 05:08:35,410 INFO /home/hardikvyas/parag/venv/bin/bench --site all clear-cache
+2025-07-16 05:08:34,108 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-16 05:08:34,673 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-16 05:08:34,714 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-16 05:08:34,778 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-16 05:08:34,943 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-16 05:12:45,923 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 05:13:54,574 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 05:14:39,992 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 05:16:15,394 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 05:25:38,087 INFO /home/hardikvyas/parag/venv/bin/bench --site all clear-cache
+2025-07-16 05:25:41,032 INFO /home/hardikvyas/parag/venv/bin/bench build --app dms
+2025-07-16 05:27:09,229 INFO /home/hardikvyas/parag/venv/bin/bench --site all clear-cache
+2025-07-16 05:27:13,806 INFO /home/hardikvyas/parag/venv/bin/bench --site all migrate
+2025-07-16 05:27:22,498 INFO /home/hardikvyas/parag/venv/bin/bench start
+2025-07-16 05:27:28,156 INFO /home/hardikvyas/parag/venv/bin/bench serve --port 8000
+2025-07-16 05:27:28,171 INFO /home/hardikvyas/parag/venv/bin/bench watch
+2025-07-16 05:27:22,639 INFO /home/hardikvyas/parag/venv/bin/bench schedule
+2025-07-16 05:27:22,711 INFO /home/hardikvyas/parag/venv/bin/bench worker
+2025-07-16 05:32:49,847 INFO /usr/local/bin/bench update --reset
+2025-07-16 05:32:53,064 LOG pulling frappe
+2025-07-16 05:32:53,064 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-15
+2025-07-16 05:32:53,526 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git reset --hard upstream/version-15
+2025-07-16 05:32:53,665 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git reflog expire --all
+2025-07-16 05:32:53,671 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && git gc --prune=all
+2025-07-16 05:32:54,146 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2025-07-16 05:32:54,947 LOG pulling dms
+2025-07-16 05:32:54,947 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git fetch --depth=1 --no-tags upstream main
+2025-07-16 05:32:55,957 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git reset --hard upstream/main
+2025-07-16 05:32:56,005 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git reflog expire --all
+2025-07-16 05:32:56,012 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && git gc --prune=all
+2025-07-16 05:32:56,422 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && find . -name "*.pyc" -delete
+2025-07-16 05:32:58,249 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-07-16 05:32:59,905 LOG Installing frappe
+2025-07-16 05:32:59,906 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hardikvyas/parag/frappe-bench/apps/frappe 
+2025-07-16 05:33:07,998 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/frappe && yarn install --check-files
+2025-07-16 05:33:20,903 LOG Installing dms
+2025-07-16 05:33:20,903 DEBUG cd /home/hardikvyas/parag/frappe-bench && /home/hardikvyas/parag/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/hardikvyas/parag/frappe-bench/apps/dms 
+2025-07-16 05:33:27,418 DEBUG cd /home/hardikvyas/parag/frappe-bench/apps/dms && yarn install --check-files
+2025-07-16 05:36:16,458 INFO A newer version of bench is available: 5.23.0 → 5.25.9
+2025-07-16 05:37:25,141 INFO /usr/local/bin/bench start
+2025-07-16 05:37:26,208 INFO /usr/local/bin/bench watch
+2025-07-16 05:37:26,422 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 05:37:26,426 INFO /usr/local/bin/bench schedule
+2025-07-16 05:37:26,578 INFO /usr/local/bin/bench worker
+2025-07-16 05:44:51,543 INFO /usr/local/bin/bench build --app dms
+2025-07-16 05:48:02,370 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 05:48:17,399 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 05:48:26,940 INFO /usr/local/bin/bench start
+2025-07-16 05:48:27,864 INFO /usr/local/bin/bench worker
+2025-07-16 05:48:27,901 INFO /usr/local/bin/bench watch
+2025-07-16 05:48:27,971 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 05:48:28,102 INFO /usr/local/bin/bench schedule
+2025-07-16 05:52:29,728 INFO /usr/local/bin/bench build --app dms
+2025-07-16 05:53:35,609 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 05:53:48,031 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 05:53:46,983 INFO /usr/local/bin/bench start
+2025-07-16 05:53:47,612 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 05:53:47,634 INFO /usr/local/bin/bench schedule
+2025-07-16 05:53:47,704 INFO /usr/local/bin/bench watch
+2025-07-16 05:53:47,798 INFO /usr/local/bin/bench worker
+2025-07-16 05:56:56,545 INFO /usr/local/bin/bench build --app dms
+2025-07-16 05:58:50,665 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 05:58:56,657 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 05:58:59,268 INFO /usr/local/bin/bench start
+2025-07-16 05:58:59,770 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 05:58:59,791 INFO /usr/local/bin/bench schedule
+2025-07-16 05:58:59,857 INFO /usr/local/bin/bench worker
+2025-07-16 05:58:59,875 INFO /usr/local/bin/bench watch
+2025-07-16 06:00:01,527 INFO /home/hardikvyas/parag/venv/bin/bench --verbose --site all backup
+2025-07-16 06:27:52,627 INFO /usr/local/bin/bench new-doctype "DMS OCR" --module dms --custom=0
+2025-07-16 06:28:01,266 INFO /usr/local/bin/bench start
+2025-07-16 06:28:01,848 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 06:28:01,853 INFO /usr/local/bin/bench worker
+2025-07-16 06:28:01,891 INFO /usr/local/bin/bench schedule
+2025-07-16 06:28:01,909 INFO /usr/local/bin/bench watch
+2025-07-16 06:33:45,177 INFO /usr/local/bin/bench build --app dms
+2025-07-16 06:35:13,792 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 06:35:21,186 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 06:35:23,951 INFO /usr/local/bin/bench start
+2025-07-16 06:35:24,526 INFO /usr/local/bin/bench schedule
+2025-07-16 06:35:24,534 INFO /usr/local/bin/bench watch
+2025-07-16 06:35:24,585 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 06:35:24,772 INFO /usr/local/bin/bench worker
+2025-07-16 06:39:54,704 INFO /usr/local/bin/bench build --app dms
+2025-07-16 06:41:01,047 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 06:41:08,597 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 06:41:12,602 INFO /usr/local/bin/bench start
+2025-07-16 06:41:13,148 INFO /usr/local/bin/bench worker
+2025-07-16 06:41:13,176 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 06:41:13,254 INFO /usr/local/bin/bench schedule
+2025-07-16 06:41:13,282 INFO /usr/local/bin/bench watch
+2025-07-16 06:44:15,480 INFO /usr/local/bin/bench build --app dms
+2025-07-16 06:45:19,000 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 06:45:25,915 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 06:45:29,711 INFO /usr/local/bin/bench start
+2025-07-16 06:45:30,234 INFO /usr/local/bin/bench watch
+2025-07-16 06:45:30,260 INFO /usr/local/bin/bench worker
+2025-07-16 06:45:30,301 INFO /usr/local/bin/bench schedule
+2025-07-16 06:45:30,451 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 06:48:04,726 INFO /usr/local/bin/bench build --app dms
+2025-07-16 06:49:42,307 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 06:50:05,544 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 06:50:47,942 INFO /usr/local/bin/bench start
+2025-07-16 06:50:48,447 INFO /usr/local/bin/bench worker
+2025-07-16 06:50:48,454 INFO /usr/local/bin/bench schedule
+2025-07-16 06:50:48,485 INFO /usr/local/bin/bench watch
+2025-07-16 06:50:48,537 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:00:06,943 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:04:32,800 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:09:22,228 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:09:27,920 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:09:32,675 INFO /usr/local/bin/bench start
+2025-07-16 07:09:38,239 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:09:38,296 INFO /usr/local/bin/bench worker
+2025-07-16 07:09:38,318 INFO /usr/local/bin/bench watch
+2025-07-16 07:09:38,349 INFO /usr/local/bin/bench schedule
+2025-07-16 07:12:42,052 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:13:49,281 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:13:58,232 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:14:02,114 INFO /usr/local/bin/bench start
+2025-07-16 07:14:02,623 INFO /usr/local/bin/bench schedule
+2025-07-16 07:14:02,728 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:14:02,748 INFO /usr/local/bin/bench worker
+2025-07-16 07:14:02,814 INFO /usr/local/bin/bench watch
+2025-07-16 07:17:43,340 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:18:51,875 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:18:59,787 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:19:03,485 INFO /usr/local/bin/bench start
+2025-07-16 07:19:04,186 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:19:04,229 INFO /usr/local/bin/bench schedule
+2025-07-16 07:19:04,229 INFO /usr/local/bin/bench worker
+2025-07-16 07:19:04,232 INFO /usr/local/bin/bench watch
+2025-07-16 07:24:39,360 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:25:48,285 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:25:56,420 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:25:59,923 INFO /usr/local/bin/bench start
+2025-07-16 07:26:00,515 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:26:00,532 INFO /usr/local/bin/bench worker
+2025-07-16 07:26:00,536 INFO /usr/local/bin/bench schedule
+2025-07-16 07:26:00,664 INFO /usr/local/bin/bench watch
+2025-07-16 07:28:50,830 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:30:02,231 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:30:07,614 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:30:14,444 INFO /usr/local/bin/bench start
+2025-07-16 07:30:14,985 INFO /usr/local/bin/bench watch
+2025-07-16 07:30:15,033 INFO /usr/local/bin/bench worker
+2025-07-16 07:30:15,152 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:30:15,216 INFO /usr/local/bin/bench schedule
+2025-07-16 07:34:01,747 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:35:13,364 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:35:24,143 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:35:33,937 INFO /usr/local/bin/bench start
+2025-07-16 07:35:34,790 INFO /usr/local/bin/bench worker
+2025-07-16 07:35:34,819 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:35:34,831 INFO /usr/local/bin/bench watch
+2025-07-16 07:35:34,910 INFO /usr/local/bin/bench schedule
+2025-07-16 07:46:45,922 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:48:02,019 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:48:13,370 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:48:20,845 INFO /usr/local/bin/bench start
+2025-07-16 07:48:21,718 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:48:21,719 INFO /usr/local/bin/bench worker
+2025-07-16 07:48:21,753 INFO /usr/local/bin/bench schedule
+2025-07-16 07:48:21,823 INFO /usr/local/bin/bench watch
+2025-07-16 07:51:23,942 INFO /usr/local/bin/bench build --app dms
+2025-07-16 07:52:34,839 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 07:52:43,418 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 07:52:46,762 INFO /usr/local/bin/bench start
+2025-07-16 07:52:47,641 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 07:52:47,677 INFO /usr/local/bin/bench schedule
+2025-07-16 07:52:47,788 INFO /usr/local/bin/bench worker
+2025-07-16 07:52:47,806 INFO /usr/local/bin/bench watch
+2025-07-16 07:59:36,034 INFO /usr/local/bin/bench build --app dms
+2025-07-16 08:00:38,913 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 08:00:47,117 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 08:00:51,103 INFO /usr/local/bin/bench start
+2025-07-16 08:00:51,637 INFO /usr/local/bin/bench watch
+2025-07-16 08:00:51,680 INFO /usr/local/bin/bench schedule
+2025-07-16 08:00:51,703 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 08:00:51,807 INFO /usr/local/bin/bench worker
+2025-07-16 08:05:32,378 INFO /usr/local/bin/bench build --app dms
+2025-07-16 08:06:50,684 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 08:07:00,239 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 08:07:06,565 INFO /usr/local/bin/bench start
+2025-07-16 08:07:07,181 INFO /usr/local/bin/bench watch
+2025-07-16 08:07:07,195 INFO /usr/local/bin/bench schedule
+2025-07-16 08:07:07,257 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 08:07:07,287 INFO /usr/local/bin/bench worker
+2025-07-16 08:11:21,724 INFO /usr/local/bin/bench start
+2025-07-16 08:11:22,347 INFO /usr/local/bin/bench watch
+2025-07-16 08:11:22,358 INFO /usr/local/bin/bench schedule
+2025-07-16 08:11:22,427 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 08:11:22,563 INFO /usr/local/bin/bench worker
+2025-07-16 08:19:42,762 INFO /usr/local/bin/bench migrate
+2025-07-16 08:20:04,012 INFO /usr/local/bin/bench build --app dms
+2025-07-16 08:20:23,585 INFO /usr/local/bin/bench --siteall migrate
+2025-07-16 08:20:29,148 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 08:20:39,420 INFO /usr/local/bin/bench build --app dms
+2025-07-16 08:22:09,402 INFO /usr/local/bin/bench --siteall migrate
+2025-07-16 08:22:17,872 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 08:22:33,198 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 08:22:40,041 INFO /usr/local/bin/bench start
+2025-07-16 08:22:40,738 INFO /usr/local/bin/bench watch
+2025-07-16 08:22:40,749 INFO /usr/local/bin/bench schedule
+2025-07-16 08:22:40,753 INFO /usr/local/bin/bench worker
+2025-07-16 08:22:40,791 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 08:28:22,345 INFO /usr/local/bin/bench migrate
+2025-07-16 08:28:33,575 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 08:28:42,603 INFO /usr/local/bin/bench start
+2025-07-16 08:28:43,127 INFO /usr/local/bin/bench schedule
+2025-07-16 08:28:43,134 INFO /usr/local/bin/bench watch
+2025-07-16 08:28:43,206 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 08:28:43,211 INFO /usr/local/bin/bench worker
+2025-07-16 08:35:32,052 INFO /usr/local/bin/bench build --app dms
+2025-07-16 08:52:09,248 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 08:53:14,932 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 08:54:29,922 INFO /usr/local/bin/bench start
+2025-07-16 08:54:30,428 INFO /usr/local/bin/bench watch
+2025-07-16 08:54:30,452 INFO /usr/local/bin/bench schedule
+2025-07-16 08:54:30,457 INFO /usr/local/bin/bench worker
+2025-07-16 08:54:30,613 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 09:03:56,136 INFO /usr/local/bin/bench build --app dms
+2025-07-16 09:05:15,213 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 09:05:21,030 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 09:05:24,616 INFO /usr/local/bin/bench start
+2025-07-16 09:05:25,150 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 09:05:25,236 INFO /usr/local/bin/bench watch
+2025-07-16 09:05:25,295 INFO /usr/local/bin/bench schedule
+2025-07-16 09:05:25,482 INFO /usr/local/bin/bench worker
+2025-07-16 09:17:59,762 INFO /usr/local/bin/bench start
+2025-07-16 09:18:00,441 INFO /usr/local/bin/bench watch
+2025-07-16 09:18:00,602 INFO /usr/local/bin/bench schedule
+2025-07-16 09:18:00,612 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 09:18:00,750 INFO /usr/local/bin/bench worker
+2025-07-16 10:43:15,043 INFO /usr/local/bin/bench start
+2025-07-16 10:43:15,899 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 10:43:15,909 INFO /usr/local/bin/bench schedule
+2025-07-16 10:43:15,952 INFO /usr/local/bin/bench watch
+2025-07-16 10:43:16,050 INFO /usr/local/bin/bench worker
+2025-07-16 11:17:29,686 INFO /usr/local/bin/bench bench build --app dms
+2025-07-16 11:17:37,141 INFO /usr/local/bin/bench build --app dms
+2025-07-16 11:19:30,997 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 11:19:52,857 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 11:19:59,571 INFO /usr/local/bin/bench start
+2025-07-16 11:20:00,138 INFO /usr/local/bin/bench worker
+2025-07-16 11:20:00,146 INFO /usr/local/bin/bench schedule
+2025-07-16 11:20:00,202 INFO /usr/local/bin/bench watch
+2025-07-16 11:20:00,218 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 11:30:28,278 INFO /usr/local/bin/bench build --app dms
+2025-07-16 11:31:47,942 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 11:31:54,099 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 11:32:01,590 INFO /usr/local/bin/bench start
+2025-07-16 11:32:02,096 INFO /usr/local/bin/bench watch
+2025-07-16 11:32:02,102 INFO /usr/local/bin/bench schedule
+2025-07-16 11:32:02,207 INFO /usr/local/bin/bench worker
+2025-07-16 11:32:02,288 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 11:33:45,423 INFO /usr/local/bin/bench build --app dms
+2025-07-16 11:34:47,573 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 11:34:55,764 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 11:35:00,006 INFO /usr/local/bin/bench start
+2025-07-16 11:35:00,518 INFO /usr/local/bin/bench schedule
+2025-07-16 11:35:00,552 INFO /usr/local/bin/bench worker
+2025-07-16 11:35:00,588 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 11:35:00,657 INFO /usr/local/bin/bench watch
+2025-07-16 11:43:44,395 INFO /usr/local/bin/bench start
+2025-07-16 11:43:45,103 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 11:43:45,128 INFO /usr/local/bin/bench worker
+2025-07-16 11:43:45,230 INFO /usr/local/bin/bench schedule
+2025-07-16 11:43:45,282 INFO /usr/local/bin/bench watch
+2025-07-16 11:49:06,986 INFO /usr/local/bin/bench build --app dms
+2025-07-16 11:50:11,356 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 11:50:16,821 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 11:50:20,469 INFO /usr/local/bin/bench start
+2025-07-16 11:50:20,979 INFO /usr/local/bin/bench watch
+2025-07-16 11:50:20,989 INFO /usr/local/bin/bench schedule
+2025-07-16 11:50:21,045 INFO /usr/local/bin/bench worker
+2025-07-16 11:50:21,090 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 12:00:01,518 INFO /home/hardikvyas/parag/venv/bin/bench --verbose --site all backup
+2025-07-16 12:02:05,064 INFO /usr/local/bin/bench build --app dms
+2025-07-16 12:03:35,071 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 12:04:05,975 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 12:05:04,792 INFO /usr/local/bin/bench start
+2025-07-16 12:05:05,274 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 12:05:05,334 INFO /usr/local/bin/bench schedule
+2025-07-16 12:05:05,401 INFO /usr/local/bin/bench watch
+2025-07-16 12:05:05,506 INFO /usr/local/bin/bench worker
+2025-07-16 14:23:21,349 INFO /usr/local/bin/bench build --app dms
+2025-07-16 14:24:29,689 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 14:24:39,387 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 14:25:20,863 INFO /usr/local/bin/bench start
+2025-07-16 14:25:21,345 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 14:25:21,393 INFO /usr/local/bin/bench schedule
+2025-07-16 14:25:21,428 INFO /usr/local/bin/bench worker
+2025-07-16 14:25:21,473 INFO /usr/local/bin/bench watch
+2025-07-16 14:34:38,523 INFO /usr/local/bin/bench build --app dms
+2025-07-16 14:35:52,782 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 14:35:59,072 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 14:36:02,494 INFO /usr/local/bin/bench start
+2025-07-16 14:36:03,013 INFO /usr/local/bin/bench worker
+2025-07-16 14:36:03,049 INFO /usr/local/bin/bench schedule
+2025-07-16 14:36:03,081 INFO /usr/local/bin/bench serve --port 8000
+2025-07-16 14:36:03,108 INFO /usr/local/bin/bench watch
+2025-07-16 14:42:41,052 INFO /usr/local/bin/bench build --app dms
+2025-07-16 14:43:49,851 INFO /usr/local/bin/bench --site all migrate
+2025-07-16 14:43:55,937 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-16 14:44:47,883 INFO /usr/local/bin/bench start
+2025-07-16 14:44:48,374 INFO /usr/local/bin/bench worker
+2025-07-16 14:44:48,397 INFO /usr/local/bin/bench watch
+2025-07-16 14:44:48,447 INFO /usr/local/bin/bench schedule
+2025-07-16 14:44:48,503 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:14:40,966 INFO /usr/local/bin/bench start
+2025-07-17 00:14:42,714 INFO /usr/local/bin/bench schedule
+2025-07-17 00:14:42,882 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:14:43,134 INFO /usr/local/bin/bench worker
+2025-07-17 00:14:43,183 INFO /usr/local/bin/bench watch
+2025-07-17 00:20:42,117 INFO /usr/local/bin/bench build --app dms
+2025-07-17 00:24:52,127 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 00:25:07,913 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 00:25:13,384 INFO /usr/local/bin/bench start
+2025-07-17 00:25:14,243 INFO /usr/local/bin/bench worker
+2025-07-17 00:25:14,312 INFO /usr/local/bin/bench watch
+2025-07-17 00:25:14,351 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:25:14,548 INFO /usr/local/bin/bench schedule
+2025-07-17 00:28:48,864 INFO /usr/local/bin/bench build --app dms
+2025-07-17 00:30:04,067 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 00:30:11,603 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 00:30:23,318 INFO /usr/local/bin/bench start
+2025-07-17 00:30:23,833 INFO /usr/local/bin/bench schedule
+2025-07-17 00:30:23,842 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:30:23,890 INFO /usr/local/bin/bench worker
+2025-07-17 00:30:24,003 INFO /usr/local/bin/bench watch
+2025-07-17 00:33:52,127 INFO /usr/local/bin/bench build --app dms
+2025-07-17 00:35:58,680 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 00:36:04,611 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 00:36:08,290 INFO /usr/local/bin/bench start
+2025-07-17 00:36:08,776 INFO /usr/local/bin/bench watch
+2025-07-17 00:36:08,823 INFO /usr/local/bin/bench schedule
+2025-07-17 00:36:08,844 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:36:08,905 INFO /usr/local/bin/bench worker
+2025-07-17 00:40:21,504 INFO /usr/local/bin/bench build --app dms
+2025-07-17 00:41:22,475 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 00:41:30,701 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 00:41:34,298 INFO /usr/local/bin/bench start
+2025-07-17 00:41:34,815 INFO /usr/local/bin/bench watch
+2025-07-17 00:41:34,880 INFO /usr/local/bin/bench worker
+2025-07-17 00:41:34,956 INFO /usr/local/bin/bench schedule
+2025-07-17 00:41:34,978 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:43:54,059 INFO /usr/local/bin/bench build --app dms
+2025-07-17 00:44:56,211 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 00:45:03,524 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 00:45:03,885 INFO /usr/local/bin/bench start
+2025-07-17 00:45:04,391 INFO /usr/local/bin/bench worker
+2025-07-17 00:45:04,394 INFO /usr/local/bin/bench schedule
+2025-07-17 00:45:04,482 INFO /usr/local/bin/bench watch
+2025-07-17 00:45:04,543 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:56:35,505 INFO /usr/local/bin/bench build --app dms
+2025-07-17 00:58:23,238 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 00:58:31,901 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 00:58:35,567 INFO /usr/local/bin/bench start
+2025-07-17 00:58:36,758 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 00:58:36,848 INFO /usr/local/bin/bench worker
+2025-07-17 00:58:37,062 INFO /usr/local/bin/bench schedule
+2025-07-17 00:58:37,090 INFO /usr/local/bin/bench watch
+2025-07-17 01:01:34,824 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:02:36,864 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:02:44,983 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:02:48,108 INFO /usr/local/bin/bench start
+2025-07-17 01:02:48,761 INFO /usr/local/bin/bench watch
+2025-07-17 01:02:48,869 INFO /usr/local/bin/bench worker
+2025-07-17 01:02:48,875 INFO /usr/local/bin/bench schedule
+2025-07-17 01:02:49,000 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:07:36,911 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:08:40,508 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:08:49,638 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:08:52,908 INFO /usr/local/bin/bench start
+2025-07-17 01:08:53,450 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:08:53,471 INFO /usr/local/bin/bench watch
+2025-07-17 01:08:53,521 INFO /usr/local/bin/bench schedule
+2025-07-17 01:08:53,527 INFO /usr/local/bin/bench worker
+2025-07-17 01:13:02,066 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:14:32,469 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:14:40,796 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:14:38,243 INFO /usr/local/bin/bench start
+2025-07-17 01:14:38,975 INFO /usr/local/bin/bench watch
+2025-07-17 01:14:39,072 INFO /usr/local/bin/bench worker
+2025-07-17 01:14:39,094 INFO /usr/local/bin/bench schedule
+2025-07-17 01:14:39,170 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:18:37,926 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:19:40,679 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:19:48,285 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:19:51,549 INFO /usr/local/bin/bench start
+2025-07-17 01:19:52,262 INFO /usr/local/bin/bench schedule
+2025-07-17 01:19:52,311 INFO /usr/local/bin/bench watch
+2025-07-17 01:19:52,366 INFO /usr/local/bin/bench worker
+2025-07-17 01:19:52,495 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:21:39,469 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:22:43,643 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:22:51,946 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:22:55,778 INFO /usr/local/bin/bench start
+2025-07-17 01:22:56,426 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:22:56,475 INFO /usr/local/bin/bench worker
+2025-07-17 01:22:56,689 INFO /usr/local/bin/bench schedule
+2025-07-17 01:22:56,740 INFO /usr/local/bin/bench watch
+2025-07-17 01:28:14,782 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:29:39,257 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:29:42,507 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:29:45,645 INFO /usr/local/bin/bench start
+2025-07-17 01:29:46,151 INFO /usr/local/bin/bench watch
+2025-07-17 01:29:46,194 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:29:46,219 INFO /usr/local/bin/bench worker
+2025-07-17 01:29:46,226 INFO /usr/local/bin/bench schedule
+2025-07-17 01:34:09,745 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:35:41,456 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:35:48,073 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:35:51,483 INFO /usr/local/bin/bench start
+2025-07-17 01:35:51,982 INFO /usr/local/bin/bench worker
+2025-07-17 01:35:52,005 INFO /usr/local/bin/bench schedule
+2025-07-17 01:35:52,133 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:35:52,257 INFO /usr/local/bin/bench watch
+2025-07-17 01:38:15,252 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:39:32,121 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:39:39,532 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:39:39,471 INFO /usr/local/bin/bench start
+2025-07-17 01:39:40,090 INFO /usr/local/bin/bench watch
+2025-07-17 01:39:40,125 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:39:40,174 INFO /usr/local/bin/bench worker
+2025-07-17 01:39:40,244 INFO /usr/local/bin/bench schedule
+2025-07-17 01:44:03,671 INFO /usr/local/bin/bench build --app dms
+2025-07-17 01:45:09,880 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 01:45:14,556 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 01:45:18,130 INFO /usr/local/bin/bench start
+2025-07-17 01:45:18,667 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 01:45:18,667 INFO /usr/local/bin/bench worker
+2025-07-17 01:45:18,787 INFO /usr/local/bin/bench watch
+2025-07-17 01:45:18,864 INFO /usr/local/bin/bench schedule
+2025-07-17 02:04:34,925 INFO /usr/local/bin/bench build --app dms
+2025-07-17 02:05:41,707 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 02:05:46,678 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 02:05:50,700 INFO /usr/local/bin/bench start
+2025-07-17 02:05:51,233 INFO /usr/local/bin/bench schedule
+2025-07-17 02:05:51,278 INFO /usr/local/bin/bench watch
+2025-07-17 02:05:51,296 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 02:05:51,409 INFO /usr/local/bin/bench worker
+2025-07-17 02:13:25,044 INFO /usr/local/bin/bench build --app dms
+2025-07-17 02:14:28,537 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 02:14:36,426 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 02:14:39,491 INFO /usr/local/bin/bench start
+2025-07-17 02:14:40,011 INFO /usr/local/bin/bench watch
+2025-07-17 02:14:40,052 INFO /usr/local/bin/bench schedule
+2025-07-17 02:14:40,141 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 02:14:40,145 INFO /usr/local/bin/bench worker
+2025-07-17 02:23:22,268 INFO /usr/local/bin/bench build --app dms
+2025-07-17 02:24:25,686 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 02:24:33,502 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 02:24:36,612 INFO /usr/local/bin/bench start
+2025-07-17 02:24:37,115 INFO /usr/local/bin/bench schedule
+2025-07-17 02:24:37,145 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 02:24:37,161 INFO /usr/local/bin/bench worker
+2025-07-17 02:24:37,424 INFO /usr/local/bin/bench watch
+2025-07-17 02:28:21,171 INFO /usr/local/bin/bench build --app dms
+2025-07-17 02:30:57,497 INFO /usr/local/bin/bench start
+2025-07-17 02:30:58,150 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 02:30:58,212 INFO /usr/local/bin/bench watch
+2025-07-17 02:30:58,284 INFO /usr/local/bin/bench schedule
+2025-07-17 02:30:58,309 INFO /usr/local/bin/bench worker
+2025-07-17 02:31:43,158 INFO /usr/local/bin/bench build --app dms
+2025-07-17 02:33:17,465 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 02:33:21,322 INFO /usr/local/bin/bench build --app dms
+2025-07-17 02:34:57,970 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 02:35:04,197 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 02:35:09,213 INFO /usr/local/bin/bench start
+2025-07-17 02:35:09,772 INFO /usr/local/bin/bench worker
+2025-07-17 02:35:09,784 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 02:35:09,794 INFO /usr/local/bin/bench watch
+2025-07-17 02:35:09,803 INFO /usr/local/bin/bench schedule
+2025-07-17 02:39:06,852 INFO /usr/local/bin/bench migrate
+2025-07-17 02:39:13,787 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 02:39:17,000 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 02:39:20,447 INFO /usr/local/bin/bench start
+2025-07-17 02:39:21,249 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 02:39:21,273 INFO /usr/local/bin/bench watch
+2025-07-17 02:39:21,447 INFO /usr/local/bin/bench worker
+2025-07-17 02:39:21,447 INFO /usr/local/bin/bench schedule
+2025-07-17 02:39:41,718 INFO /usr/local/bin/bench migrate
+2025-07-17 02:39:49,186 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 02:39:55,977 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 02:39:59,274 INFO /usr/local/bin/bench start
+2025-07-17 02:39:59,986 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 02:40:00,023 INFO /usr/local/bin/bench schedule
+2025-07-17 02:40:00,043 INFO /usr/local/bin/bench worker
+2025-07-17 02:40:00,114 INFO /usr/local/bin/bench watch
+2025-07-17 02:42:48,968 INFO /usr/local/bin/bench console
+2025-07-17 02:48:09,841 INFO /usr/local/bin/bench start
+2025-07-17 02:48:11,130 INFO /usr/local/bin/bench watch
+2025-07-17 02:48:11,138 INFO /usr/local/bin/bench schedule
+2025-07-17 02:48:11,296 INFO /usr/local/bin/bench worker
+2025-07-17 02:48:11,437 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 03:07:00,569 INFO /usr/local/bin/bench build --app dms
+2025-07-17 03:08:10,992 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 03:08:19,894 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 03:08:23,408 INFO /usr/local/bin/bench start
+2025-07-17 03:08:24,005 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 03:08:24,043 INFO /usr/local/bin/bench schedule
+2025-07-17 03:08:24,144 INFO /usr/local/bin/bench watch
+2025-07-17 03:08:21,377 INFO /usr/local/bin/bench worker
+2025-07-17 03:29:59,054 INFO /usr/local/bin/bench build --app dms
+2025-07-17 03:31:24,948 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 03:31:30,097 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 03:31:33,504 INFO /usr/local/bin/bench start
+2025-07-17 03:31:34,240 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 03:31:34,355 INFO /usr/local/bin/bench worker
+2025-07-17 03:31:34,359 INFO /usr/local/bin/bench schedule
+2025-07-17 03:31:34,502 INFO /usr/local/bin/bench watch
+2025-07-17 04:23:51,383 INFO /usr/local/bin/bench build --app dms
+2025-07-17 04:25:09,448 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 04:25:15,242 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 04:25:18,273 INFO /usr/local/bin/bench start
+2025-07-17 04:25:15,987 INFO /usr/local/bin/bench schedule
+2025-07-17 04:25:16,025 INFO /usr/local/bin/bench worker
+2025-07-17 04:25:16,025 INFO /usr/local/bin/bench watch
+2025-07-17 04:25:16,162 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 04:31:24,201 INFO /usr/local/bin/bench build --app dms
+2025-07-17 04:34:08,821 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 04:34:15,440 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 04:34:18,964 INFO /usr/local/bin/bench start
+2025-07-17 04:34:19,710 INFO /usr/local/bin/bench schedule
+2025-07-17 04:34:19,738 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 04:34:19,764 INFO /usr/local/bin/bench worker
+2025-07-17 04:34:16,872 INFO /usr/local/bin/bench watch
+2025-07-17 04:35:14,621 INFO /usr/local/bin/bench build --app dms
+2025-07-17 04:36:48,224 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 04:36:56,992 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 04:37:01,115 INFO /usr/local/bin/bench start
+2025-07-17 04:37:02,039 INFO /usr/local/bin/bench worker
+2025-07-17 04:37:02,081 INFO /usr/local/bin/bench watch
+2025-07-17 04:37:02,127 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 04:37:02,135 INFO /usr/local/bin/bench schedule
+2025-07-17 04:54:04,732 INFO /usr/local/bin/bench build --app dms
+2025-07-17 04:55:33,572 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 04:55:42,565 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 04:55:46,188 INFO /usr/local/bin/bench start
+2025-07-17 04:55:46,816 INFO /usr/local/bin/bench watch
+2025-07-17 04:55:46,835 INFO /usr/local/bin/bench worker
+2025-07-17 04:55:46,844 INFO /usr/local/bin/bench schedule
+2025-07-17 04:55:46,946 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 04:58:18,109 INFO /usr/local/bin/bench build --app dms
+2025-07-17 04:59:37,015 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 04:59:44,848 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 04:59:51,383 INFO /usr/local/bin/bench start
+2025-07-17 04:59:57,096 INFO /usr/local/bin/bench schedule
+2025-07-17 04:59:57,096 INFO /usr/local/bin/bench worker
+2025-07-17 04:59:51,986 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 04:59:52,163 INFO /usr/local/bin/bench watch
+2025-07-17 05:24:30,578 INFO /usr/local/bin/bench build --app dms
+2025-07-17 05:26:36,213 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 05:26:44,648 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 05:26:50,904 INFO /usr/local/bin/bench start
+2025-07-17 05:26:51,442 INFO /usr/local/bin/bench watch
+2025-07-17 05:26:51,450 INFO /usr/local/bin/bench worker
+2025-07-17 05:26:51,575 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 05:26:51,626 INFO /usr/local/bin/bench schedule
+2025-07-17 05:45:29,794 INFO /usr/local/bin/bench build --app dms
+2025-07-17 05:46:58,077 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 05:47:11,596 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 05:47:14,682 INFO /usr/local/bin/bench start
+2025-07-17 05:47:15,234 INFO /usr/local/bin/bench watch
+2025-07-17 05:47:15,247 INFO /usr/local/bin/bench schedule
+2025-07-17 05:47:15,258 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 05:47:15,404 INFO /usr/local/bin/bench worker
+2025-07-17 05:47:57,235 INFO /usr/local/bin/bench build --app dms
+2025-07-17 05:50:07,991 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 05:50:17,380 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 05:50:20,356 INFO /usr/local/bin/bench start
+2025-07-17 05:50:20,854 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 05:50:20,874 INFO /usr/local/bin/bench watch
+2025-07-17 05:50:20,892 INFO /usr/local/bin/bench worker
+2025-07-17 05:50:21,049 INFO /usr/local/bin/bench schedule
+2025-07-17 05:53:35,846 INFO /usr/local/bin/bench build --app dms
+2025-07-17 05:55:00,985 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 05:55:13,065 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 05:55:29,980 INFO /usr/local/bin/bench start
+2025-07-17 05:55:30,617 INFO /usr/local/bin/bench watch
+2025-07-17 05:55:30,658 INFO /usr/local/bin/bench worker
+2025-07-17 05:55:30,669 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 05:55:30,814 INFO /usr/local/bin/bench schedule
+2025-07-17 05:58:12,058 INFO /usr/local/bin/bench build --app dms
+2025-07-17 05:59:20,516 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 05:59:27,425 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 05:59:31,361 INFO /usr/local/bin/bench start
+2025-07-17 05:59:28,971 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 05:59:29,026 INFO /usr/local/bin/bench schedule
+2025-07-17 05:59:29,047 INFO /usr/local/bin/bench worker
+2025-07-17 05:59:29,056 INFO /usr/local/bin/bench watch
+2025-07-17 06:00:01,763 INFO /home/hardikvyas/parag/venv/bin/bench --verbose --site all backup
+2025-07-17 06:04:34,670 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:05:43,429 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:05:52,044 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:05:55,822 INFO /usr/local/bin/bench start
+2025-07-17 06:05:56,341 INFO /usr/local/bin/bench worker
+2025-07-17 06:05:56,372 INFO /usr/local/bin/bench schedule
+2025-07-17 06:05:56,372 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:05:56,631 INFO /usr/local/bin/bench watch
+2025-07-17 06:08:16,586 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:10:01,468 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:10:04,354 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:10:08,918 INFO /usr/local/bin/bench start
+2025-07-17 06:10:09,414 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:10:09,426 INFO /usr/local/bin/bench watch
+2025-07-17 06:10:09,495 INFO /usr/local/bin/bench schedule
+2025-07-17 06:10:09,524 INFO /usr/local/bin/bench worker
+2025-07-17 06:21:43,984 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:23:39,770 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:23:45,275 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:24:37,479 INFO /usr/local/bin/bench start
+2025-07-17 06:24:38,140 INFO /usr/local/bin/bench watch
+2025-07-17 06:24:38,166 INFO /usr/local/bin/bench worker
+2025-07-17 06:24:38,290 INFO /usr/local/bin/bench schedule
+2025-07-17 06:24:38,378 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:25:32,996 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:26:59,882 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:27:03,162 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:27:07,465 INFO /usr/local/bin/bench start
+2025-07-17 06:27:07,992 INFO /usr/local/bin/bench watch
+2025-07-17 06:27:08,028 INFO /usr/local/bin/bench worker
+2025-07-17 06:27:08,063 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:27:08,138 INFO /usr/local/bin/bench schedule
+2025-07-17 06:30:54,647 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:31:58,839 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:32:04,959 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:32:08,723 INFO /usr/local/bin/bench start
+2025-07-17 06:32:09,430 INFO /usr/local/bin/bench schedule
+2025-07-17 06:32:09,449 INFO /usr/local/bin/bench watch
+2025-07-17 06:32:09,458 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:32:09,736 INFO /usr/local/bin/bench worker
+2025-07-17 06:32:47,207 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:33:49,325 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:33:56,337 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:33:59,290 INFO /usr/local/bin/bench start
+2025-07-17 06:33:59,854 INFO /usr/local/bin/bench worker
+2025-07-17 06:33:59,920 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:34:00,072 INFO /usr/local/bin/bench watch
+2025-07-17 06:34:00,205 INFO /usr/local/bin/bench schedule
+2025-07-17 06:38:17,539 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:39:28,489 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:39:35,569 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:39:36,281 INFO /usr/local/bin/bench start
+2025-07-17 06:39:36,812 INFO /usr/local/bin/bench watch
+2025-07-17 06:39:36,823 INFO /usr/local/bin/bench schedule
+2025-07-17 06:39:36,915 INFO /usr/local/bin/bench worker
+2025-07-17 06:39:36,964 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:44:18,548 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:45:32,584 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:45:36,623 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:45:40,050 INFO /usr/local/bin/bench start
+2025-07-17 06:45:40,525 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:45:40,536 INFO /usr/local/bin/bench watch
+2025-07-17 06:45:40,611 INFO /usr/local/bin/bench schedule
+2025-07-17 06:45:40,721 INFO /usr/local/bin/bench worker
+2025-07-17 06:52:48,388 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:54:12,104 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:54:18,146 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:54:19,452 INFO /usr/local/bin/bench start
+2025-07-17 06:54:19,978 INFO /usr/local/bin/bench watch
+2025-07-17 06:54:19,990 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:54:20,012 INFO /usr/local/bin/bench worker
+2025-07-17 06:54:20,131 INFO /usr/local/bin/bench schedule
+2025-07-17 06:57:09,546 INFO /usr/local/bin/bench build --app dms
+2025-07-17 06:58:32,296 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 06:58:38,673 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 06:58:42,210 INFO /usr/local/bin/bench start
+2025-07-17 06:58:42,874 INFO /usr/local/bin/bench schedule
+2025-07-17 06:58:42,920 INFO /usr/local/bin/bench watch
+2025-07-17 06:58:42,983 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 06:58:42,990 INFO /usr/local/bin/bench worker
+2025-07-17 07:03:38,646 INFO /usr/local/bin/bench build --app dms
+2025-07-17 07:04:42,027 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 07:04:52,702 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 07:04:51,928 INFO /usr/local/bin/bench start
+2025-07-17 07:04:52,500 INFO /usr/local/bin/bench schedule
+2025-07-17 07:04:52,521 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 07:04:52,558 INFO /usr/local/bin/bench worker
+2025-07-17 07:04:52,566 INFO /usr/local/bin/bench watch
+2025-07-17 07:14:02,634 INFO /usr/local/bin/bench build --app dms
+2025-07-17 07:16:36,349 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 07:17:37,439 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 07:17:40,279 INFO /usr/local/bin/bench start
+2025-07-17 07:17:40,781 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 07:17:40,818 INFO /usr/local/bin/bench worker
+2025-07-17 07:17:40,858 INFO /usr/local/bin/bench watch
+2025-07-17 07:17:40,862 INFO /usr/local/bin/bench schedule
+2025-07-17 07:22:42,949 INFO /usr/local/bin/bench build --app dms
+2025-07-17 07:25:31,387 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 07:25:36,594 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 07:25:39,894 INFO /usr/local/bin/bench start
+2025-07-17 07:25:40,546 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 07:25:40,584 INFO /usr/local/bin/bench schedule
+2025-07-17 07:25:40,665 INFO /usr/local/bin/bench worker
+2025-07-17 07:25:40,685 INFO /usr/local/bin/bench watch
+2025-07-17 07:41:12,302 INFO /usr/local/bin/bench build --app dms
+2025-07-17 07:42:16,289 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 07:42:24,167 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 07:42:24,973 INFO /usr/local/bin/bench start
+2025-07-17 07:42:25,519 INFO /usr/local/bin/bench watch
+2025-07-17 07:42:25,557 INFO /usr/local/bin/bench worker
+2025-07-17 07:42:25,575 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 07:42:25,672 INFO /usr/local/bin/bench schedule
+2025-07-17 07:54:29,828 INFO /usr/local/bin/bench build --app dms
+2025-07-17 07:55:34,696 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 07:55:41,796 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 07:55:50,617 INFO /usr/local/bin/bench start
+2025-07-17 07:55:51,180 INFO /usr/local/bin/bench schedule
+2025-07-17 07:55:51,215 INFO /usr/local/bin/bench watch
+2025-07-17 07:55:51,216 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 07:55:51,349 INFO /usr/local/bin/bench worker
+2025-07-17 08:14:02,196 INFO /usr/local/bin/bench build --app dms
+2025-07-17 08:16:15,042 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:16:20,778 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 08:16:23,703 INFO /usr/local/bin/bench start
+2025-07-17 08:16:24,214 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 08:16:24,261 INFO /usr/local/bin/bench watch
+2025-07-17 08:16:24,263 INFO /usr/local/bin/bench worker
+2025-07-17 08:16:24,363 INFO /usr/local/bin/bench schedule
+2025-07-17 08:18:05,744 INFO /usr/local/bin/bench migrate
+2025-07-17 08:18:13,214 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:18:19,747 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 08:18:23,796 INFO /usr/local/bin/bench start
+2025-07-17 08:18:24,306 INFO /usr/local/bin/bench worker
+2025-07-17 08:18:24,392 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 08:18:24,455 INFO /usr/local/bin/bench schedule
+2025-07-17 08:18:24,498 INFO /usr/local/bin/bench watch
+2025-07-17 08:20:39,618 INFO /usr/local/bin/bench build --app dms
+2025-07-17 08:21:47,349 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:22:30,425 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 08:22:34,031 INFO /usr/local/bin/bench start
+2025-07-17 08:22:34,708 INFO /usr/local/bin/bench schedule
+2025-07-17 08:22:34,744 INFO /usr/local/bin/bench watch
+2025-07-17 08:22:34,777 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 08:22:34,829 INFO /usr/local/bin/bench worker
+2025-07-17 08:34:25,337 INFO /usr/local/bin/bench build --app dms
+2025-07-17 08:35:34,477 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:35:42,148 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 08:35:45,819 INFO /usr/local/bin/bench start
+2025-07-17 08:35:46,366 INFO /usr/local/bin/bench watch
+2025-07-17 08:35:46,371 INFO /usr/local/bin/bench schedule
+2025-07-17 08:35:46,555 INFO /usr/local/bin/bench worker
+2025-07-17 08:35:46,725 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 08:39:47,852 INFO /usr/local/bin/bench build --app dms
+2025-07-17 08:41:15,626 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:41:21,137 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 08:41:24,809 INFO /usr/local/bin/bench start
+2025-07-17 08:41:25,311 INFO /usr/local/bin/bench watch
+2025-07-17 08:41:25,314 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 08:41:25,365 INFO /usr/local/bin/bench worker
+2025-07-17 08:41:25,610 INFO /usr/local/bin/bench schedule
+2025-07-17 08:46:08,977 INFO /usr/local/bin/bench build --app dms
+2025-07-17 08:47:18,963 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:47:28,060 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 08:47:31,697 INFO /usr/local/bin/bench start
+2025-07-17 08:47:32,230 INFO /usr/local/bin/bench watch
+2025-07-17 08:47:32,241 INFO /usr/local/bin/bench worker
+2025-07-17 08:47:32,280 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 08:47:29,459 INFO /usr/local/bin/bench schedule
+2025-07-17 08:56:50,146 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:56:55,487 INFO /usr/local/bin/bench build --app dms
+2025-07-17 08:58:16,908 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 08:58:36,413 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 08:58:41,250 INFO /usr/local/bin/bench start
+2025-07-17 08:58:41,769 INFO /usr/local/bin/bench watch
+2025-07-17 08:58:41,783 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 08:58:41,850 INFO /usr/local/bin/bench schedule
+2025-07-17 08:58:41,882 INFO /usr/local/bin/bench worker
+2025-07-17 09:11:11,963 INFO /usr/local/bin/bench build --app dms
+2025-07-17 09:12:23,446 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 09:12:31,325 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 09:12:44,314 INFO /usr/local/bin/bench start
+2025-07-17 09:12:44,861 INFO /usr/local/bin/bench watch
+2025-07-17 09:12:44,867 INFO /usr/local/bin/bench worker
+2025-07-17 09:12:44,967 INFO /usr/local/bin/bench schedule
+2025-07-17 09:12:45,075 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 09:19:53,408 INFO /usr/local/bin/bench build --app dms
+2025-07-17 09:21:03,993 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 09:21:08,199 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 09:21:11,799 INFO /usr/local/bin/bench start
+2025-07-17 09:21:12,611 INFO /usr/local/bin/bench schedule
+2025-07-17 09:21:12,702 INFO /usr/local/bin/bench worker
+2025-07-17 09:21:12,785 INFO /usr/local/bin/bench watch
+2025-07-17 09:21:12,838 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 09:24:03,703 INFO /usr/local/bin/bench build --app dms
+2025-07-17 09:25:09,795 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 09:25:24,240 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 09:25:28,420 INFO /usr/local/bin/bench start
+2025-07-17 09:25:28,951 INFO /usr/local/bin/bench watch
+2025-07-17 09:25:28,994 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 09:25:29,024 INFO /usr/local/bin/bench worker
+2025-07-17 09:25:29,036 INFO /usr/local/bin/bench schedule
+2025-07-17 09:31:06,664 INFO /usr/local/bin/bench start
+2025-07-17 09:31:07,208 INFO /usr/local/bin/bench schedule
+2025-07-17 09:31:07,256 INFO /usr/local/bin/bench watch
+2025-07-17 09:31:07,269 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 09:31:07,456 INFO /usr/local/bin/bench worker
+2025-07-17 09:38:26,596 INFO /usr/local/bin/bench build --app dms
+2025-07-17 09:40:01,777 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 09:40:31,789 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 09:40:32,462 INFO /usr/local/bin/bench start
+2025-07-17 09:40:32,989 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 09:40:33,007 INFO /usr/local/bin/bench watch
+2025-07-17 09:40:33,071 INFO /usr/local/bin/bench schedule
+2025-07-17 09:40:33,082 INFO /usr/local/bin/bench worker
+2025-07-17 09:49:55,502 INFO /usr/local/bin/bench start
+2025-07-17 09:50:00,582 INFO /usr/local/bin/bench build --app dms
+2025-07-17 09:51:10,128 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 09:51:17,348 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 09:51:20,968 INFO /usr/local/bin/bench start
+2025-07-17 09:51:21,543 INFO /usr/local/bin/bench schedule
+2025-07-17 09:51:21,545 INFO /usr/local/bin/bench worker
+2025-07-17 09:51:21,601 INFO /usr/local/bin/bench watch
+2025-07-17 09:51:21,681 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 09:57:22,646 INFO /usr/local/bin/bench build --app dms
+2025-07-17 10:01:01,838 INFO /usr/local/bin/bench build --app dms
+2025-07-17 10:02:12,296 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 10:02:23,602 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 10:02:46,517 INFO /usr/local/bin/bench start
+2025-07-17 10:02:47,182 INFO /usr/local/bin/bench watch
+2025-07-17 10:02:47,182 INFO /usr/local/bin/bench worker
+2025-07-17 10:02:47,272 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 10:02:47,407 INFO /usr/local/bin/bench schedule
+2025-07-17 10:06:11,140 INFO /usr/local/bin/bench build --app dms
+2025-07-17 10:07:13,378 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 10:07:17,031 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 10:07:24,973 INFO /usr/local/bin/bench start
+2025-07-17 10:07:25,493 INFO /usr/local/bin/bench schedule
+2025-07-17 10:07:25,511 INFO /usr/local/bin/bench watch
+2025-07-17 10:07:25,548 INFO /usr/local/bin/bench worker
+2025-07-17 10:07:25,563 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 10:16:09,889 INFO /usr/local/bin/bench build --app dms
+2025-07-17 10:18:16,969 INFO /usr/local/bin/bench --site all migrate
+2025-07-17 10:18:22,676 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-17 10:18:25,823 INFO /usr/local/bin/bench start
+2025-07-17 10:18:26,330 INFO /usr/local/bin/bench worker
+2025-07-17 10:18:26,336 INFO /usr/local/bin/bench watch
+2025-07-17 10:18:26,347 INFO /usr/local/bin/bench schedule
+2025-07-17 10:18:26,451 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 10:21:15,632 INFO /usr/local/bin/bench build --app dms
+2025-07-17 10:22:28,164 INFO /usr/local/bin/bench start
+2025-07-17 10:22:28,874 INFO /usr/local/bin/bench serve --port 8000
+2025-07-17 10:22:28,916 INFO /usr/local/bin/bench worker
+2025-07-17 10:22:28,957 INFO /usr/local/bin/bench watch
+2025-07-17 10:22:29,074 INFO /usr/local/bin/bench schedule
+2025-07-18 00:18:50,172 INFO /usr/local/bin/bench start
+2025-07-18 00:18:51,632 INFO /usr/local/bin/bench schedule
+2025-07-18 00:18:51,634 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 00:18:51,714 INFO /usr/local/bin/bench watch
+2025-07-18 00:18:51,766 INFO /usr/local/bin/bench worker
+2025-07-18 00:28:07,364 INFO /usr/local/bin/bench build --app dms
+2025-07-18 00:30:16,637 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 00:30:24,530 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 00:30:31,852 INFO /usr/local/bin/bench start
+2025-07-18 00:30:32,364 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 00:30:32,400 INFO /usr/local/bin/bench watch
+2025-07-18 00:30:32,412 INFO /usr/local/bin/bench worker
+2025-07-18 00:30:32,493 INFO /usr/local/bin/bench schedule
+2025-07-18 00:32:04,462 INFO /usr/local/bin/bench build --app dms
+2025-07-18 00:33:34,721 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 00:33:35,142 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 00:33:38,368 INFO /usr/local/bin/bench start
+2025-07-18 00:33:38,884 INFO /usr/local/bin/bench schedule
+2025-07-18 00:33:38,921 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 00:33:38,938 INFO /usr/local/bin/bench worker
+2025-07-18 00:33:39,004 INFO /usr/local/bin/bench watch
+2025-07-18 00:45:49,606 INFO /usr/local/bin/bench build --app dms
+2025-07-18 00:47:43,686 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 00:47:48,815 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 00:47:52,235 INFO /usr/local/bin/bench start
+2025-07-18 00:47:52,731 INFO /usr/local/bin/bench worker
+2025-07-18 00:47:52,745 INFO /usr/local/bin/bench watch
+2025-07-18 00:47:52,797 INFO /usr/local/bin/bench schedule
+2025-07-18 00:47:52,798 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:01:22,909 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:05:28,084 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:05:33,243 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 01:05:37,027 INFO /usr/local/bin/bench start
+2025-07-18 01:05:37,546 INFO /usr/local/bin/bench schedule
+2025-07-18 01:05:37,565 INFO /usr/local/bin/bench watch
+2025-07-18 01:05:37,598 INFO /usr/local/bin/bench worker
+2025-07-18 01:05:37,715 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:09:44,864 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:11:16,257 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:11:21,308 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 01:11:27,225 INFO /usr/local/bin/bench start
+2025-07-18 01:11:27,777 INFO /usr/local/bin/bench worker
+2025-07-18 01:11:27,786 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:11:27,958 INFO /usr/local/bin/bench schedule
+2025-07-18 01:11:28,029 INFO /usr/local/bin/bench watch
+2025-07-18 01:20:01,749 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:21:11,018 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:21:19,318 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 01:21:21,978 INFO /usr/local/bin/bench start
+2025-07-18 01:21:22,492 INFO /usr/local/bin/bench worker
+2025-07-18 01:21:22,548 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:21:22,555 INFO /usr/local/bin/bench schedule
+2025-07-18 01:21:22,617 INFO /usr/local/bin/bench watch
+2025-07-18 01:22:20,099 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:23:24,616 INFO /usr/local/bin/bench start
+2025-07-18 01:23:30,667 INFO /usr/local/bin/bench schedule
+2025-07-18 01:23:25,032 INFO /usr/local/bin/bench worker
+2025-07-18 01:23:25,046 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:23:25,270 INFO /usr/local/bin/bench watch
+2025-07-18 01:25:03,574 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:26:10,259 INFO /usr/local/bin/bench start
+2025-07-18 01:26:10,299 INFO /usr/local/bin/bench watch
+2025-07-18 01:26:10,354 INFO /usr/local/bin/bench worker
+2025-07-18 01:26:10,372 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:26:10,549 INFO /usr/local/bin/bench schedule
+2025-07-18 01:27:28,831 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:28:36,166 INFO /usr/local/bin/bench start
+2025-07-18 01:28:36,705 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:28:36,729 INFO /usr/local/bin/bench watch
+2025-07-18 01:28:36,751 INFO /usr/local/bin/bench worker
+2025-07-18 01:28:36,853 INFO /usr/local/bin/bench schedule
+2025-07-18 01:29:57,338 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:31:05,899 INFO /usr/local/bin/bench start
+2025-07-18 01:31:06,620 INFO /usr/local/bin/bench worker
+2025-07-18 01:31:06,651 INFO /usr/local/bin/bench watch
+2025-07-18 01:31:06,711 INFO /usr/local/bin/bench schedule
+2025-07-18 01:31:06,748 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:33:02,166 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:34:39,818 INFO /usr/local/bin/bench start
+2025-07-18 01:34:40,822 INFO /usr/local/bin/bench watch
+2025-07-18 01:34:40,832 INFO /usr/local/bin/bench schedule
+2025-07-18 01:34:40,878 INFO /usr/local/bin/bench worker
+2025-07-18 01:34:40,931 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:37:06,485 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:38:32,484 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:38:42,165 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 01:38:45,983 INFO /usr/local/bin/bench start
+2025-07-18 01:38:46,451 INFO /usr/local/bin/bench watch
+2025-07-18 01:38:46,480 INFO /usr/local/bin/bench worker
+2025-07-18 01:38:46,570 INFO /usr/local/bin/bench schedule
+2025-07-18 01:38:46,681 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:39:37,337 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:39:48,989 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:41:27,279 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:41:36,772 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 01:41:41,046 INFO /usr/local/bin/bench start
+2025-07-18 01:41:41,546 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:41:41,610 INFO /usr/local/bin/bench watch
+2025-07-18 01:41:41,621 INFO /usr/local/bin/bench worker
+2025-07-18 01:41:41,687 INFO /usr/local/bin/bench schedule
+2025-07-18 01:42:47,426 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:46:24,646 INFO /usr/local/bin/bench start
+2025-07-18 01:46:25,216 INFO /usr/local/bin/bench schedule
+2025-07-18 01:46:25,216 INFO /usr/local/bin/bench worker
+2025-07-18 01:46:25,262 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:46:25,339 INFO /usr/local/bin/bench watch
+2025-07-18 01:47:58,208 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:53:01,919 INFO /usr/local/bin/bench start
+2025-07-18 01:53:02,463 INFO /usr/local/bin/bench schedule
+2025-07-18 01:53:02,490 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:53:02,580 INFO /usr/local/bin/bench watch
+2025-07-18 01:53:02,624 INFO /usr/local/bin/bench worker
+2025-07-18 01:56:18,761 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:57:25,902 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:57:34,540 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 01:57:38,101 INFO /usr/local/bin/bench start
+2025-07-18 01:57:38,629 INFO /usr/local/bin/bench schedule
+2025-07-18 01:57:38,639 INFO /usr/local/bin/bench watch
+2025-07-18 01:57:38,692 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 01:57:38,797 INFO /usr/local/bin/bench worker
+2025-07-18 01:58:37,374 INFO /usr/local/bin/bench build --app dms
+2025-07-18 01:59:49,304 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 01:59:56,856 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 02:00:00,299 INFO /usr/local/bin/bench start
+2025-07-18 02:00:00,967 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 02:00:01,010 INFO /usr/local/bin/bench worker
+2025-07-18 02:00:01,157 INFO /usr/local/bin/bench watch
+2025-07-18 02:00:01,161 INFO /usr/local/bin/bench schedule
+2025-07-18 02:00:53,292 INFO /usr/local/bin/bench build --app dms
+2025-07-18 02:02:37,306 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 02:02:45,096 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 02:03:00,453 INFO /usr/local/bin/bench start
+2025-07-18 02:03:01,023 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 02:03:01,084 INFO /usr/local/bin/bench schedule
+2025-07-18 02:03:01,101 INFO /usr/local/bin/bench worker
+2025-07-18 02:03:01,162 INFO /usr/local/bin/bench watch
+2025-07-18 02:04:35,421 INFO /usr/local/bin/bench build --app dms
+2025-07-18 02:05:39,225 INFO /usr/local/bin/bench start
+2025-07-18 02:05:40,109 INFO /usr/local/bin/bench watch
+2025-07-18 02:05:40,188 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 02:05:40,250 INFO /usr/local/bin/bench worker
+2025-07-18 02:05:40,328 INFO /usr/local/bin/bench schedule
+2025-07-18 02:07:15,436 INFO /usr/local/bin/bench build --app dms
+2025-07-18 02:08:40,579 INFO /usr/local/bin/bench start
+2025-07-18 02:08:41,109 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 02:08:41,148 INFO /usr/local/bin/bench worker
+2025-07-18 02:08:41,249 INFO /usr/local/bin/bench watch
+2025-07-18 02:08:41,294 INFO /usr/local/bin/bench schedule
+2025-07-18 02:22:15,944 INFO /usr/local/bin/bench build --app dms
+2025-07-18 02:23:19,917 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 02:23:27,882 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 02:23:32,338 INFO /usr/local/bin/bench start
+2025-07-18 02:23:32,838 INFO /usr/local/bin/bench schedule
+2025-07-18 02:23:32,930 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 02:23:32,966 INFO /usr/local/bin/bench watch
+2025-07-18 02:23:32,989 INFO /usr/local/bin/bench worker
+2025-07-18 02:24:10,925 INFO /usr/local/bin/bench build --app dms
+2025-07-18 02:25:17,156 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 02:25:25,890 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 02:25:28,913 INFO /usr/local/bin/bench start
+2025-07-18 02:25:29,416 INFO /usr/local/bin/bench schedule
+2025-07-18 02:25:29,484 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 02:25:29,525 INFO /usr/local/bin/bench watch
+2025-07-18 02:25:29,649 INFO /usr/local/bin/bench worker
+2025-07-18 02:52:30,890 INFO /usr/local/bin/bench build --app dms
+2025-07-18 02:54:48,644 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 02:54:55,374 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 02:54:58,182 INFO /usr/local/bin/bench start
+2025-07-18 02:54:58,732 INFO /usr/local/bin/bench schedule
+2025-07-18 02:54:58,738 INFO /usr/local/bin/bench watch
+2025-07-18 02:54:58,748 INFO /usr/local/bin/bench worker
+2025-07-18 02:54:58,886 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 03:01:37,549 INFO /usr/local/bin/bench build --app dms
+2025-07-18 03:02:47,543 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 03:02:53,979 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 03:02:57,549 INFO /usr/local/bin/bench start
+2025-07-18 03:02:57,589 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 03:02:57,639 INFO /usr/local/bin/bench schedule
+2025-07-18 03:02:57,662 INFO /usr/local/bin/bench worker
+2025-07-18 03:02:57,681 INFO /usr/local/bin/bench watch
+2025-07-18 03:22:21,267 INFO /usr/local/bin/bench build --app dms
+2025-07-18 03:25:38,571 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 03:25:43,966 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 03:25:54,167 INFO /usr/local/bin/bench start
+2025-07-18 03:25:54,736 INFO /usr/local/bin/bench watch
+2025-07-18 03:25:54,737 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 03:25:54,922 INFO /usr/local/bin/bench schedule
+2025-07-18 03:25:54,941 INFO /usr/local/bin/bench worker
+2025-07-18 04:43:45,447 INFO /usr/local/bin/bench build --app dms
+2025-07-18 04:45:27,151 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 04:45:32,474 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 04:45:40,819 INFO /usr/local/bin/bench start
+2025-07-18 04:45:41,569 INFO /usr/local/bin/bench worker
+2025-07-18 04:45:41,637 INFO /usr/local/bin/bench watch
+2025-07-18 04:45:41,646 INFO /usr/local/bin/bench schedule
+2025-07-18 04:45:41,774 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 04:54:03,418 INFO /usr/local/bin/bench build --app dms
+2025-07-18 04:55:10,785 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 04:55:17,921 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 04:55:21,005 INFO /usr/local/bin/bench start
+2025-07-18 04:55:21,555 INFO /usr/local/bin/bench schedule
+2025-07-18 04:55:21,598 INFO /usr/local/bin/bench watch
+2025-07-18 04:55:21,639 INFO /usr/local/bin/bench worker
+2025-07-18 04:55:21,664 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 04:57:30,059 INFO /usr/local/bin/bench build --app dms
+2025-07-18 05:02:25,275 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 05:02:30,413 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 05:02:34,910 INFO /usr/local/bin/bench start
+2025-07-18 05:02:35,418 INFO /usr/local/bin/bench schedule
+2025-07-18 05:02:35,494 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 05:02:35,501 INFO /usr/local/bin/bench worker
+2025-07-18 05:02:35,621 INFO /usr/local/bin/bench watch
+2025-07-18 05:04:05,802 INFO /usr/local/bin/bench build --app dms
+2025-07-18 05:05:42,529 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 05:05:51,590 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 05:05:54,982 INFO /usr/local/bin/bench start
+2025-07-18 05:05:55,499 INFO /usr/local/bin/bench worker
+2025-07-18 05:05:55,580 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 05:05:55,619 INFO /usr/local/bin/bench schedule
+2025-07-18 05:05:55,650 INFO /usr/local/bin/bench watch
+2025-07-18 05:41:12,906 INFO /usr/local/bin/bench build --app dms
+2025-07-18 05:42:37,895 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 05:42:40,085 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 05:42:54,760 INFO /usr/local/bin/bench start
+2025-07-18 05:42:55,359 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 05:42:55,365 INFO /usr/local/bin/bench worker
+2025-07-18 05:42:55,464 INFO /usr/local/bin/bench schedule
+2025-07-18 05:42:55,563 INFO /usr/local/bin/bench watch
+2025-07-18 05:46:38,127 INFO /usr/local/bin/bench build --app dms
+2025-07-18 05:47:49,741 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 05:48:03,246 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 05:48:13,017 INFO /usr/local/bin/bench start
+2025-07-18 05:48:18,561 INFO /usr/local/bin/bench worker
+2025-07-18 05:48:18,653 INFO /usr/local/bin/bench watch
+2025-07-18 05:48:18,701 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 05:48:18,715 INFO /usr/local/bin/bench schedule
+2025-07-18 05:57:34,170 INFO /usr/local/bin/bench build --app dms
+2025-07-18 05:59:23,968 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 05:59:32,446 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 05:59:36,567 INFO /usr/local/bin/bench start
+2025-07-18 05:59:37,111 INFO /usr/local/bin/bench worker
+2025-07-18 05:59:37,143 INFO /usr/local/bin/bench schedule
+2025-07-18 05:59:37,156 INFO /usr/local/bin/bench watch
+2025-07-18 05:59:37,303 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:00:03,398 INFO /home/hardikvyas/parag/venv/bin/bench --verbose --site all backup
+2025-07-18 06:01:05,578 INFO /home/hardikvyas/parag/venv/bin/bench --verbose --site all backup
+2025-07-18 06:04:20,243 INFO /usr/local/bin/bench build --app dms
+2025-07-18 06:05:45,444 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 06:05:54,411 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 06:08:17,822 INFO /usr/local/bin/bench start
+2025-07-18 06:08:18,412 INFO /usr/local/bin/bench worker
+2025-07-18 06:08:18,425 INFO /usr/local/bin/bench watch
+2025-07-18 06:08:18,525 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:08:18,632 INFO /usr/local/bin/bench schedule
+2025-07-18 06:11:29,075 INFO /usr/local/bin/bench build --app dms
+2025-07-18 06:12:50,063 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 06:12:58,062 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 06:13:02,504 INFO /usr/local/bin/bench start
+2025-07-18 06:13:03,017 INFO /usr/local/bin/bench schedule
+2025-07-18 06:13:03,036 INFO /usr/local/bin/bench worker
+2025-07-18 06:13:03,112 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:13:03,241 INFO /usr/local/bin/bench watch
+2025-07-18 06:18:38,867 INFO /usr/local/bin/bench build --app dms
+2025-07-18 06:19:52,890 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 06:20:04,213 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 06:20:08,386 INFO /usr/local/bin/bench start
+2025-07-18 06:20:09,014 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:20:09,194 INFO /usr/local/bin/bench watch
+2025-07-18 06:20:09,227 INFO /usr/local/bin/bench schedule
+2025-07-18 06:20:09,275 INFO /usr/local/bin/bench worker
+2025-07-18 06:25:54,307 INFO /usr/local/bin/bench build --app dms
+2025-07-18 06:28:04,039 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 06:28:11,420 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 06:28:19,023 INFO /usr/local/bin/bench start
+2025-07-18 06:28:34,904 INFO /usr/local/bin/bench start
+2025-07-18 06:29:07,022 INFO /usr/local/bin/bench build --app dms
+2025-07-18 06:30:21,890 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 06:30:30,414 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 06:30:31,443 INFO /usr/local/bin/bench start
+2025-07-18 06:31:42,462 INFO /usr/local/bin/bench start
+2025-07-18 06:32:51,061 INFO /usr/local/bin/bench start
+2025-07-18 06:33:34,822 INFO /usr/local/bin/bench build --app dms
+2025-07-18 06:35:02,068 INFO /usr/local/bin/bench --site all migrate
+2025-07-18 06:35:11,357 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 06:35:18,292 INFO /usr/local/bin/bench start
+2025-07-18 06:39:35,233 INFO /usr/local/bin/bench start
+2025-07-18 06:42:59,457 INFO /usr/local/bin/bench start
+2025-07-18 06:43:00,006 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:43:00,016 INFO /usr/local/bin/bench schedule
+2025-07-18 06:43:00,029 INFO /usr/local/bin/bench worker
+2025-07-18 06:43:00,200 INFO /usr/local/bin/bench watch
+2025-07-18 06:43:17,229 INFO /usr/local/bin/bench --site all clear-cache
+2025-07-18 06:43:20,908 INFO /usr/local/bin/bench start
+2025-07-18 06:43:21,432 INFO /usr/local/bin/bench schedule
+2025-07-18 06:43:21,512 INFO /usr/local/bin/bench worker
+2025-07-18 06:43:21,568 INFO /usr/local/bin/bench watch
+2025-07-18 06:43:21,605 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:44:53,506 INFO /usr/local/bin/bench start
+2025-07-18 06:44:54,026 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:44:54,078 INFO /usr/local/bin/bench schedule
+2025-07-18 06:44:54,135 INFO /usr/local/bin/bench worker
+2025-07-18 06:44:54,184 INFO /usr/local/bin/bench watch
+2025-07-18 06:48:55,994 INFO /usr/local/bin/bench start
+2025-07-18 06:48:56,570 INFO /usr/local/bin/bench schedule
+2025-07-18 06:48:56,575 INFO /usr/local/bin/bench watch
+2025-07-18 06:48:56,636 INFO /usr/local/bin/bench serve --port 8000
+2025-07-18 06:48:56,626 INFO /usr/local/bin/bench worker
