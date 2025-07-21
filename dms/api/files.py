@@ -447,10 +447,7 @@ def save_doc(entity_name, doc_name, raw_content, content, file_size, mentions, s
     frappe.db.set_value("DMS Document", doc_name, "content", content)
     frappe.db.set_value("DMS Document", doc_name, "raw_content", raw_content)
     frappe.db.set_value("DMS Document", doc_name, "mentions", json.dumps(mentions))
-    if (
-        frappe.db.get_value("DMS File", entity_name, "file_size") != int(file_size)
-        and write_perms
-    ):
+    if frappe.db.get_value("DMS File", entity_name, "file_size") != int(file_size) and write_perms:
         frappe.db.set_value("DMS File", entity_name, "file_size", file_size)
     if json.dumps(mentions):
         frappe.enqueue(

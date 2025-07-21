@@ -37,9 +37,7 @@ def execute():
                 homes.append(k["name"])
                 continue
             k["old_name"] = k.pop("name")
-            doc = frappe.get_doc(
-                {"doctype": "DMS File", **k, "team": team.name, "is_private": 1}
-            )
+            doc = frappe.get_doc({"doctype": "DMS File", **k, "team": team.name, "is_private": 1})
             if k["path"]:
                 path_els = k["path"].split("/")
                 if "files" in path_els:

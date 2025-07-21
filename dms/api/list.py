@@ -163,9 +163,7 @@ def files(
         .groupby(DMSFile.name)
     )
     public_files_query = (
-        frappe.qb.from_(DMSPermission)
-        .where(DMSPermission.user == "")
-        .select(DMSPermission.entity)
+        frappe.qb.from_(DMSPermission).where(DMSPermission.user == "").select(DMSPermission.entity)
     )
     team_files_query = (
         frappe.qb.from_(DMSPermission)
@@ -262,9 +260,7 @@ def shared(
         .groupby(DMSFile.name)
     )
     public_files_query = (
-        frappe.qb.from_(DMSPermission)
-        .where(DMSPermission.user == "")
-        .select(DMSPermission.entity)
+        frappe.qb.from_(DMSPermission).where(DMSPermission.user == "").select(DMSPermission.entity)
     )
     team_files_query = (
         frappe.qb.from_(DMSPermission)

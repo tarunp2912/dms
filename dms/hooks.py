@@ -129,6 +129,17 @@ has_permission = {
 
 
 # fixtures = [{"dt": "Role", "filters": [["role_name", "like", "DMS %"]]}]
+#fixtures = ["DocType"]
+
+
+fixtures = [
+    {
+        "doctype": "DocType",
+        "filters": {
+            "name": ["in", ["DMS OCR"]]
+        }
+    }
+]
 
 # Scheduled Tasks
 # ---------------

@@ -53,9 +53,7 @@ def get_unread_count():
     """
     Return a count of records where user is current user and read is False
     """
-    return frappe.db.count(
-        "DMS Notification", filters={"to_user": frappe.session.user, "read": 0}
-    )
+    return frappe.db.count("DMS Notification", filters={"to_user": frappe.session.user, "read": 0})
 
 
 @frappe.whitelist()

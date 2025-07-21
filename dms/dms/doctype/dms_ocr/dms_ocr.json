@@ -1,0 +1,74 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2025-07-16 15:51:23.571841",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "file_name",
+    "file_url",
+    "uploaded_on",
+    "file_size",
+    "is_active",
+    "ocr_text"
+  ],
+  "fields": [
+    {
+      "fieldname": "file_name",
+      "fieldtype": "Data",
+      "label": "file_name"
+    },
+    {
+      "fieldname": "file_url",
+      "fieldtype": "Data",
+      "label": "file_url"
+    },
+    {
+      "fieldname": "uploaded_on",
+      "fieldtype": "Datetime",
+      "label": "uploaded_on"
+    },
+    {
+      "fieldname": "file_size",
+      "fieldtype": "Float",
+      "label": "file_size"
+    },
+    {
+      "default": "0",
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "is_active"
+    },
+    {
+      "fieldname": "ocr_text",
+      "fieldtype": "Long Text",
+      "label": "ocr_text"
+    }
+  ],
+  "grid_page_length": 50,
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2025-07-21 20:43:18.796833",
+  "modified_by": "Administrator",
+  "module": "DMS",
+  "name": "DMS OCR",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "row_format": "Dynamic",
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "states": []
+}
