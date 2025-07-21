@@ -132,7 +132,6 @@ has_permission = {
 # fixtures = ["DocType"]
 
 
-fixtures = [{"doctype": "DocType", "filters": {"name": ["in", ["DMS OCR"]]}}]
 
 # Scheduled Tasks
 # ---------------
