@@ -97,6 +97,7 @@ import {
   LucideStar,
   LucideCommand,
   LucideInbox,
+  LucideScan, // Add this import
 } from "lucide-vue-next"
 
 defineEmits(["toggleMobileSidebar", "showSearchPopUp"])
@@ -132,6 +133,11 @@ const sidebarItems = computed(() => {
       icon: LucideBuilding2,
     },
     {
+      label: "OCR",
+      route: `/ocr`,
+      icon: LucideScan,
+    },
+    {
       label: __("Shared"),
       route: `/shared/`,
       icon: LucideUsers,
@@ -142,8 +148,6 @@ const sidebarItems = computed(() => {
       icon: LucideTrash,
     },
   ]
-  if (getTeams.data && getTeams.data[team.value]?.title === "Your DMS")
-    items.splice(1, 1)
   return items
 })
 

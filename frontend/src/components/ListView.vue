@@ -127,17 +127,22 @@ const formattedRows = computed(() => {
 const selectedColumns = [
   {
     label: __("Name"),
-    key: "title",
-    getLabel: ({ row: { title, is_group, document } }) =>
-      title.lastIndexOf(".") === -1 || is_group || document
-        ? title
-        : title.slice(0, title.lastIndexOf(".")),
-    getTooltip: (e) => (e.is_group || e.document ? "" : e.title),
-    prefix: ({ row }) => {
-      return getThumbnailUrl(row.name, row.file_type)
-    },
-    width: "50%",
+    key: "name",
+    getLabel: ({ row: { title } }) => title,
+    getTooltip: (e) => e.title,
+    width: "40%",
   },
+
+  // {
+  //   label: __("Name"),
+  //   key: "title",
+  //   getLabel: ({ row: { title } }) => title,
+  //   getTooltip: (e) => (e.is_group || e.document ? "" : e.title),
+  //   prefix: ({ row }) => {
+  //     return getThumbnailUrl(row.name, row.file_type)
+  //   },
+  //   width: "40%",
+  // },
 
   {
     label: __("Owner"),
@@ -208,7 +213,7 @@ const selectedColumns = [
         : row.file_size_pretty,
     width: "8%",
   },
-  { label: "", key: "options", align: "right", width: "5%" },
+  { label: "", key: "options", align: "right", width: "12%" },
 ].filter((k) => !k.isEnabled || k.isEnabled(route.name))
 
 const setActive = (entityName) => {

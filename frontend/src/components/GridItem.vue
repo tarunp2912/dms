@@ -40,6 +40,9 @@
     <div class="truncate w-full w-fit text-base font-medium text-ink-gray-8">
       {{ file.title }}
     </div>
+    <div class="truncate w-full w-fit text-xs text-ink-gray-5">
+      {{ file.name }}
+    </div>
     <div class="mt-[5px] text-xs text-ink-gray-5">
       <div class="flex items-center justify-start gap-1">
         <img
@@ -62,6 +65,27 @@
       <!-- <p class="mt-1">
         {{ file.file_size_pretty }}
       </p> -->
+    </div>
+    <div
+      class="mt-2 flex gap-1 items-center w-full"
+      style="justify-content: flex-end"
+    >
+      <button
+        v-if="file.ocr"
+        class="px-1.5 py-0.5 text-[11px] rounded bg-blue-500 text-white hover:bg-blue-600 min-w-[40px]"
+        @click.stop="onView(file)"
+        style="margin-left: auto"
+      >
+        View
+      </button>
+      <button
+        v-if="file.ocr"
+        class="px-1.5 py-0.5 text-[11px] rounded bg-green-500 text-white hover:bg-green-600 min-w-[55px]"
+        @click.stop="onSummary(file)"
+        style="margin-left: 2px"
+      >
+        Summary
+      </button>
     </div>
   </div>
 </template>
@@ -91,4 +115,20 @@ const childrenSentence = computed(() => {
   if (!props.file.children) return "Empty"
   return props.file.children + " item" + (props.file.children === 1 ? "" : "s")
 })
+
+function onView(file) {
+  window.open(file.file_url, "_blank")
+}
+
+async function onSummary(file) {
+  try {
+    const res = await fetch(
+      `/api/method/dms.api.ocr.get_result?name=${file.name}`
+    )
+    const data = await res.json()
+    alert(data.message?.text || "No summary found.")
+  } catch (e) {
+    alert("Failed to fetch summary")
+  }
+}
 </script>

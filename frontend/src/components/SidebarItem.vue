@@ -43,9 +43,10 @@
 import { Tooltip } from "frappe-ui"
 import { computed } from "vue"
 import { useStore } from "vuex"
-import { useRouter } from "vue-router"
+import { useRouter, useRoute } from "vue-router"
 
 const router = useRouter()
+const route = useRoute()
 const store = useStore()
 
 const props = defineProps({
@@ -72,7 +73,12 @@ function handleClick() {
 }
 
 let isActive = computed(() => {
+  // Prefer route match for static routes
+  if (typeof props.to === "string" && route.path === props.to) {
+    return true
+  }
+  // Fallback to breadcrumb match for dynamic/team routes
   const first = store.state.breadcrumbs[0]
-  return first.label === props.label || first.name === props.label
+  return first && (first.label === props.label || first.name === props.label)
 })
 </script>

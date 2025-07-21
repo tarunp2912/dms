@@ -1,6 +1,6 @@
 export function getIconUrl(file_type) {
   return new URL(
-    `/src/assets/images/icons/${file_type.toLowerCase()}.svg`,
+    `/src/assets/images/icons/${file_type?.toLowerCase() || ""}.svg`,
     import.meta.url
   )
 }

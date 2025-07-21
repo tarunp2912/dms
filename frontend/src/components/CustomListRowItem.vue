@@ -46,13 +46,39 @@
         {{ column?.getLabel ? column.getLabel({ row }) : label }}
       </div>
 
-      <Button
-        v-if="column.key === 'options'"
-        class="!bg-inherit"
-        @click="(e) => contextMenu(e, row)"
-      >
-        <LucideMoreHorizontal class="size-4" />
-      </Button>
+      <template v-if="column.key === 'options'">
+        <div
+          style="
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+          "
+        >
+          <Button
+            class="!bg-inherit"
+            @click="(e) => contextMenu(e, row)"
+          >
+            <LucideMoreHorizontal class="size-4" />
+          </Button>
+          <button
+            v-if="row.ocr"
+            class="ml-1 px-1.5 py-0.5 text-[11px] rounded bg-blue-500 text-white hover:bg-blue-600 min-w-[40px]"
+            @click.stop="onView(row)"
+            style="margin-left: auto"
+          >
+            View
+          </button>
+          <button
+            v-if="row.ocr"
+            class="ml-1 px-1.5 py-0.5 text-[11px] rounded bg-green-500 text-white hover:bg-green-600 min-w-[55px]"
+            @click.stop="onSummary(row)"
+            style="margin-left: 2px"
+          >
+            Summary
+          </button>
+        </div>
+      </template>
     </template>
     <template
       v-if="idx === 0"
@@ -104,5 +130,23 @@ if (props.column.prefix && props.column.key === "title") {
 
   src = ref(thumbnailLink || backupLink)
   imgLoaded = ref(false)
+}
+
+console.log("CustomListRowItem row.title:", props.row.title, "row:", props.row)
+
+function onView(file) {
+  window.open(file.file_url, "_blank")
+}
+
+async function onSummary(file) {
+  try {
+    const res = await fetch(
+      `/api/method/dms.api.ocr.get_result?name=${file.name}`
+    )
+    const data = await res.json()
+    alert(data.message?.text || "No summary found.")
+  } catch (e) {
+    alert("Failed to fetch summary")
+  }
 }
 </script>

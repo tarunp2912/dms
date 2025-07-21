@@ -62,6 +62,20 @@ export const openEntity = (team = null, entity, new_tab = false) => {
       name: "Document",
       params: { team, entityName: entity.name },
     })
+  } else if (entity.ocr) {
+    if (
+      entity.file_url &&
+      (entity.file_url.toLowerCase().endsWith(".doc") ||
+        entity.file_url.toLowerCase().endsWith(".docx"))
+    ) {
+      // Open the file in a new tab (browser will download if not viewable)
+      window.open(entity.file_url, "_blank")
+    } else {
+      router.push({
+        name: "OcrPreview",
+        params: { entityName: entity.name },
+      })
+    }
   } else {
     router.push({
       name: "File",

@@ -79,6 +79,25 @@ const routes = [
     beforeEnter: [setRootBreadCrumb],
   },
   {
+    path: "/ocr",
+    name: "OCR",
+    component: () => import("@/pages/OCR.vue"),
+    beforeEnter: (to, from, next) => {
+      document.title = "OCR"
+      // Set breadcrumb to OCR
+      store.commit("setBreadcrumbs", [
+        { label: "OCR", name: "OCR", route: to.path },
+      ])
+      next()
+    },
+    // No team param, global route
+  },
+  {
+    path: "/ocr/:entityName",
+    name: "OcrPreview",
+    component: () => import("@/pages/OcrPreview.vue"),
+  },
+  {
     path: "/t/:team/file/:entityName",
     name: "File",
     component: () => import("@/pages/File.vue"),

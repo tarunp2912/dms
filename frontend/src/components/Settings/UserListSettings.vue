@@ -310,7 +310,9 @@ const roleOptions = [
       ),
   },
 ]
-allUsers.fetch({ team: team.value })
+if (team.value) {
+  allUsers.fetch({ team: team.value })
+}
 function emailTest() {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   return emailInput.value

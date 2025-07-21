@@ -195,3 +195,13 @@ scheduler_events = {
 
 
 signup_form_template = "templates/signup.html"
+
+# # Add OCR API endpoints
+# override_whitelisted_methods = getattr(globals(), 'override_whitelisted_methods', {})
+# override_whitelisted_methods.update({
+#     'dms.api.ocr.upload': 'dms.api.ocr.upload',
+#     'dms.api.ocr.list': 'dms.api.ocr.list',
+# })
+
+# Optionally, add to app's REST API routes if needed
+# See Frappe docs for custom route registration if required

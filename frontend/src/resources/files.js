@@ -307,6 +307,12 @@ export const translate = createResource({
   cache: "translate",
 })
 
+export function safeFetch(resource, params) {
+  if (params && params.team) {
+    resource.fetch(params)
+  }
+}
+
 setCache(getHome, "home-folder-contents")
 setCache(getShared, "shared-folder-contents")
 setCache(getRecents, "recents-folder-contents")

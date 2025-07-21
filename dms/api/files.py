@@ -726,19 +726,28 @@ def set_favourite(entities=None, clear_all=False):
 
 
 @frappe.whitelist()
-def remove_or_restore(entity_names, team):
+def remove_or_restore(entity_names, team=None, ocr=False):
     """
     To move entities to or restore entities from the trash
 
     :param entity_names: List of document-names
     :type entity_names: list[str]
     """
-    storage_data = storage_bar_data(team)
-
+    ocr = frappe.parse_json(ocr) if isinstance(ocr, str) else ocr
     if isinstance(entity_names, str):
         entity_names = json.loads(entity_names)
     if not isinstance(entity_names, list):
         frappe.throw(f"Expected list but got {type(entity_names)}", ValueError)
+
+    if ocr:
+        # OCR logic: delete or restore from OCR File table
+        for entity in entity_names:
+            doc = frappe.get_doc("DMS OCR", entity)
+            doc.is_active = 0
+            doc.save()
+        return  # <--- THIS IS CRITICAL
+
+    storage_data = storage_bar_data(team)
 
     def depth_zero_toggle_is_active(doc):
         if doc.is_active:
