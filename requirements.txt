@@ -6,3 +6,7 @@ unoconv
 thumbnail
 boto3
 PyJWT
+PyPDF2
+python-docx
+opencv-python
+pytesseract

@@ -14,6 +14,7 @@ def upload():
     import tempfile
     import mimetypes
     import traceback
+
     ocr_text = ""
     file = None
     if hasattr(frappe.request, "files"):
@@ -29,20 +30,23 @@ def upload():
 
     # OCR/TEXT extraction logic
     try:
-        ext = file_name.lower().split('.')[-1]
-        with tempfile.NamedTemporaryFile(delete=False, suffix='.'+ext) as tmp:
+        ext = file_name.lower().split(".")[-1]
+        with tempfile.NamedTemporaryFile(delete=False, suffix="." + ext) as tmp:
             tmp.write(content)
             tmp_path = tmp.name
         if ext == "pdf":
             from PyPDF2 import PdfReader
+
             reader = PdfReader(tmp_path)
             ocr_text = "\n".join([page.extract_text() or "" for page in reader.pages])
         elif ext == "docx":
             from docx import Document
+
             doc = Document(tmp_path)
             ocr_text = "\n".join([para.text for para in doc.paragraphs])
         elif ext in ["png", "jpg", "jpeg", "bmp", "tiff"]:
             import cv2, pytesseract
+
             image = cv2.imread(tmp_path)
             if image is not None:
                 ocr_text = pytesseract.image_to_string(image)
