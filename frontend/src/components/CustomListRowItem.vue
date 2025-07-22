@@ -71,8 +71,9 @@
           </button>
           <button
             v-if="row.ocr"
+            type="button"
             class="ml-1 px-1.5 py-0.5 text-[11px] rounded bg-green-500 text-white hover:bg-green-600 min-w-[55px]"
-            @click.stop="onSummary(row)"
+            @click.stop.prevent="onSummary(row)"
             style="margin-left: 2px"
           >
             Summary
@@ -108,10 +109,36 @@
       </div>
     </template>
   </ListRowItem>
+  <div
+    v-if="showSummary"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30 summary-overlay"
+  >
+    <div
+      class="relative bg-white rounded-2xl shadow-2xl p-8 max-w-lg w-full mx-4 animate-fade-in max-h-[80vh] flex flex-col summary-card"
+      @dblclick.stop
+    >
+      <button
+        @click="closeSummary"
+        class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 text-2xl font-bold focus:outline-none z-10"
+      >
+        ×
+      </button>
+      <h2 class="text-2xl font-bold mb-4 text-center">Summary</h2>
+      <div
+        class="overflow-y-auto flex-1 pr-2"
+        style="max-height: 60vh"
+      >
+        <pre
+          class="summary-pre whitespace-pre-wrap text-gray-800 text-base leading-relaxed font-sans"
+          >{{ summaryText }}</pre
+        >
+      </div>
+    </div>
+  </div>
 </template>
 <script setup>
 import { ListRowItem, Tooltip } from "frappe-ui"
-import { ref } from "vue"
+import { ref, onUnmounted } from "vue"
 
 const props = defineProps({
   idx: Number,
@@ -138,15 +165,67 @@ function onView(file) {
   window.open(file.file_url, "_blank")
 }
 
+const showSummary = ref(false)
+const summaryText = ref("")
+
+function closeSummary() {
+  showSummary.value = false
+  summaryText.value = ""
+}
+
 async function onSummary(file) {
   try {
     const res = await fetch(
       `/api/method/dms.api.ocr.get_result?name=${file.name}`
     )
     const data = await res.json()
-    alert(data.message?.text || "No summary found.")
+    summaryText.value = data.message?.text || "No summary found."
+    showSummary.value = true
+    document.body.style.overflow = "hidden"
   } catch (e) {
-    alert("Failed to fetch summary")
+    summaryText.value = "Failed to fetch summary"
+    showSummary.value = true
+    document.body.style.overflow = "hidden"
   }
 }
+
+onUnmounted(() => {
+  document.body.style.overflow = ""
+})
 </script>
+
+<style scoped>
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.2s ease;
+}
+.summary-pre {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  cursor: text;
+}
+.summary-overlay {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.summary-card {
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+</style>
