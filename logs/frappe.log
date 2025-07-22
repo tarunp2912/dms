@@ -394,3 +394,214 @@ Form Dict: {'entity_names': '["saaaaccdc6"]', 'cmd': 'dms.api.files.remove_or_re
 2025-07-18 06:36:50,477 ERROR frappe New Exception collected in error log
 Site: hardik.com
 Form Dict: {'entity_names': '["p6o9he42tq"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 07:42:36,454 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["tb1gaf1i46"]', 'team': 'e1b2388lb7', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 07:42:45,674 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["p6o9he42tq"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 07:46:21,315 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["p6o9he42tq"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 07:55:34,371 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["p6o9he42tq"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 07:58:42,452 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '0f2d7f19-0550-4068-bd43-6e1f5b6c422f', 'chunk_index': '0', 'total_file_size': '16970', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752745719929', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:42,548 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '0f2d7f19-0550-4068-bd43-6e1f5b6c422f', 'chunk_index': '0', 'total_file_size': '16970', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752745719929', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:42,642 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '0f2d7f19-0550-4068-bd43-6e1f5b6c422f', 'chunk_index': '0', 'total_file_size': '16970', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752745719929', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:42,735 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '0f2d7f19-0550-4068-bd43-6e1f5b6c422f', 'chunk_index': '0', 'total_file_size': '16970', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752745719929', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,007 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '0f2d7f19-0550-4068-bd43-6e1f5b6c422f', 'chunk_index': '0', 'total_file_size': '16970', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752745719929', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,183 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '0f2d7f19-0550-4068-bd43-6e1f5b6c422f', 'chunk_index': '0', 'total_file_size': '16970', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752745719929', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,287 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '4a069c99-a5ff-4ec3-9095-109c48fd1973', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,393 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '4a069c99-a5ff-4ec3-9095-109c48fd1973', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,491 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '4a069c99-a5ff-4ec3-9095-109c48fd1973', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,583 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '4a069c99-a5ff-4ec3-9095-109c48fd1973', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,669 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '4a069c99-a5ff-4ec3-9095-109c48fd1973', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,791 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '4a069c99-a5ff-4ec3-9095-109c48fd1973', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:43,925 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '90ba077b-dfd2-49ba-a2d4-c6b72751bf46', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:44,031 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '90ba077b-dfd2-49ba-a2d4-c6b72751bf46', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:44,258 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '90ba077b-dfd2-49ba-a2d4-c6b72751bf46', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:44,492 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '90ba077b-dfd2-49ba-a2d4-c6b72751bf46', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:49,702 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '90ba077b-dfd2-49ba-a2d4-c6b72751bf46', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:44,397 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '90ba077b-dfd2-49ba-a2d4-c6b72751bf46', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:44,769 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '11dbb26a-7aef-47df-be58-fb76e5f18a0e', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:45,036 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '11dbb26a-7aef-47df-be58-fb76e5f18a0e', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:45,340 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '11dbb26a-7aef-47df-be58-fb76e5f18a0e', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:45,519 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '11dbb26a-7aef-47df-be58-fb76e5f18a0e', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:45,660 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '11dbb26a-7aef-47df-be58-fb76e5f18a0e', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:58:45,796 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '11dbb26a-7aef-47df-be58-fb76e5f18a0e', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:08,767 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'db750a5c-7f9a-44d4-9ba1-da738921a506', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:08,988 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'db750a5c-7f9a-44d4-9ba1-da738921a506', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:09,203 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'db750a5c-7f9a-44d4-9ba1-da738921a506', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:09,428 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'db750a5c-7f9a-44d4-9ba1-da738921a506', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:09,664 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'db750a5c-7f9a-44d4-9ba1-da738921a506', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:09,885 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'db750a5c-7f9a-44d4-9ba1-da738921a506', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:22,030 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'ee95c7b2-c639-4723-9f2f-58df50979fcf', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:22,170 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'ee95c7b2-c639-4723-9f2f-58df50979fcf', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:22,336 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'ee95c7b2-c639-4723-9f2f-58df50979fcf', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:22,518 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'ee95c7b2-c639-4723-9f2f-58df50979fcf', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:22,964 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'ee95c7b2-c639-4723-9f2f-58df50979fcf', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 07:59:23,176 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'ee95c7b2-c639-4723-9f2f-58df50979fcf', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:03:50,641 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'c013bdb0-79b7-499a-8804-424f7ad14d0e', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:03:50,708 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'c013bdb0-79b7-499a-8804-424f7ad14d0e', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:03:50,912 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'c013bdb0-79b7-499a-8804-424f7ad14d0e', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:03:51,096 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'c013bdb0-79b7-499a-8804-424f7ad14d0e', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:03:51,215 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'c013bdb0-79b7-499a-8804-424f7ad14d0e', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:03:51,415 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'c013bdb0-79b7-499a-8804-424f7ad14d0e', 'chunk_index': '0', 'total_file_size': '120583', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752582378197', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:04:35,662 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e2e90cc8-31b2-41f4-b16a-8dc3a7f856e5', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:04:35,830 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e2e90cc8-31b2-41f4-b16a-8dc3a7f856e5', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:04:36,082 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e2e90cc8-31b2-41f4-b16a-8dc3a7f856e5', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:04:36,502 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e2e90cc8-31b2-41f4-b16a-8dc3a7f856e5', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:04:36,822 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e2e90cc8-31b2-41f4-b16a-8dc3a7f856e5', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:04:37,095 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e2e90cc8-31b2-41f4-b16a-8dc3a7f856e5', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:08:57,534 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '72d37c80-d253-4ae4-99c2-ca2958c025b1', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:08:57,777 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '72d37c80-d253-4ae4-99c2-ca2958c025b1', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:08:58,058 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '72d37c80-d253-4ae4-99c2-ca2958c025b1', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:08:58,302 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '72d37c80-d253-4ae4-99c2-ca2958c025b1', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:08:58,520 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '72d37c80-d253-4ae4-99c2-ca2958c025b1', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:08:58,723 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': '72d37c80-d253-4ae4-99c2-ca2958c025b1', 'chunk_index': '0', 'total_file_size': '72988', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752742858792', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:14:36,430 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["chaofvjk1e"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-18 08:19:03,887 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e89a7ef6-c91c-4e26-9810-705b742b01bf', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:19:04,166 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e89a7ef6-c91c-4e26-9810-705b742b01bf', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:19:04,343 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e89a7ef6-c91c-4e26-9810-705b742b01bf', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:19:04,679 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e89a7ef6-c91c-4e26-9810-705b742b01bf', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:19:05,045 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e89a7ef6-c91c-4e26-9810-705b742b01bf', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-18 08:19:05,293 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'uuid': 'e89a7ef6-c91c-4e26-9810-705b742b01bf', 'chunk_index': '0', 'total_file_size': '680162', 'chunk_size': '20971520', 'total_chunk_count': '1', 'chunk_byte_offset': '0', 'team': 'e1b2388lb7', 'last_modified': '1752559234774', 'cmd': 'dms.api.files.upload_file'}
+2025-07-20 02:43:28,527 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["p6o9he42tq"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-20 07:35:54,312 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["d1r79kk9tn","06ed6dvn1s","3migvfp0j0","chaofvjk1e","p6o9he42tq"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-21 01:49:48,675 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'entity_names': '["kaq45gru2n","k7ea5qntm4","k27l9361n8","eaf35np8do","d9tkek0d0i","01f7tk8rh2","3re73gacbn","eihvp53mt4"]', 'cmd': 'dms.api.files.remove_or_restore'}
+2025-07-21 03:26:18,456 ERROR frappe New Exception collected in error log
+Site: hardik.com
+Form Dict: {'doctype': 'Appointment Letter', 'name': 'HR-APP-LETTER-00001', 'format': 'default', 'letterhead': 'hardik22', 'no_letterhead': '0', '_lang': 'en', 'key': '********', 'cmd': 'frappe.utils.print_format.download_pdf'}
+2025-07-21 03:30:04,581 ERROR frappe Error while inserting deferred Error Log record: Error Log f6takaludl: 'Title' (Module import failed for Appointment Letter, the DocType you're trying to open might be deleted.
+Error: No module named 'frappe.core.doctype.appointment_letter') will get truncated, as max characters allowed is 140
+Site: hardik.com
+Form Dict: {}

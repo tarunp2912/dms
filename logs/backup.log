@@ -234,3 +234,33 @@ Backup Summary for hardik.com at 2025-07-18 15:31:05.545507
 Config  : ./hardik.com/private/backups/20250718_153102-hardik_com-site_config_backup.json 94.0B
 Database: ./hardik.com/private/backups/20250718_153102-hardik_com-database.sql.gz         313.5KiB
 Backup for Site hardik.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_06243711d933417b --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _06243711d933417b | /usr/bin/gzip >> ./hardik.com/private/backups/20250720_153010-hardik_com-database.sql.gz
+
+Backup Summary for hardik.com at 2025-07-20 15:30:11.241776
+Config  : ./hardik.com/private/backups/20250720_153010-hardik_com-site_config_backup.json 94.0B
+Database: ./hardik.com/private/backups/20250720_153010-hardik_com-database.sql.gz         321.1KiB
+Backup for Site hardik.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_06243711d933417b --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _06243711d933417b | /usr/bin/gzip >> ./hardik.com/private/backups/20250721_093004-hardik_com-database.sql.gz
+
+Backup Summary for hardik.com at 2025-07-21 09:30:05.583338
+Config  : ./hardik.com/private/backups/20250721_093004-hardik_com-site_config_backup.json 94.0B
+Database: ./hardik.com/private/backups/20250721_093004-hardik_com-database.sql.gz         326.4KiB
+Backup for Site hardik.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_06243711d933417b --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _06243711d933417b | /usr/bin/gzip >> ./hardik.com/private/backups/20250721_153009-hardik_com-database.sql.gz
+
+Backup Summary for hardik.com at 2025-07-21 15:30:03.640327
+Config  : ./hardik.com/private/backups/20250721_153009-hardik_com-site_config_backup.json 94.0B
+Database: ./hardik.com/private/backups/20250721_153009-hardik_com-database.sql.gz         336.2KiB
+Backup for Site hardik.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_06243711d933417b --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _06243711d933417b | /usr/bin/gzip >> ./hardik.com/private/backups/20250721_153058-hardik_com-database.sql.gz
+
+Backup Summary for hardik.com at 2025-07-21 15:30:58.869100
+Config  : ./hardik.com/private/backups/20250721_153058-hardik_com-site_config_backup.json 94.0B
+Database: ./hardik.com/private/backups/20250721_153058-hardik_com-database.sql.gz         336.2KiB
+Backup for Site hardik.com has been successfully completed
+set -o pipefail; /usr/bin/mariadb-dump --user=_06243711d933417b --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _06243711d933417b | /usr/bin/gzip >> ./hardik.com/private/backups/20250721_213002-hardik_com-database.sql.gz
+
+Backup Summary for hardik.com at 2025-07-21 21:30:11.173674
+Config  : ./hardik.com/private/backups/20250721_213002-hardik_com-site_config_backup.json 94.0B
+Database: ./hardik.com/private/backups/20250721_213002-hardik_com-database.sql.gz         363.3KiB
+Backup for Site hardik.com has been successfully completed

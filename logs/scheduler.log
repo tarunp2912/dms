@@ -1,5 +1,2 @@
-2025-07-18 00:20:47,483 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for hardik.com
-2025-07-18 00:20:47,496 ERROR scheduler Skipped queueing frappe.automation.doctype.auto_repeat.auto_repeat.make_auto_repeat_entry because it was found in queue for hardik.com
-2025-07-18 00:20:47,514 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for hardik.com
-2025-07-18 00:20:47,521 ERROR scheduler Skipped queueing frappe.sessions.clear_expired_sessions because it was found in queue for hardik.com
-2025-07-18 00:20:47,553 ERROR scheduler Skipped queueing frappe.integrations.doctype.google_contacts.google_contacts.sync because it was found in queue for hardik.com
+2025-07-22 09:11:29,027 ERROR scheduler Skipped queueing frappe.email.doctype.auto_email_report.auto_email_report.send_daily because it was found in queue for hardik.com
+2025-07-22 09:11:29,055 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for hardik.com

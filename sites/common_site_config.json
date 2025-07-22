@@ -1,6 +1,7 @@
 {
  "background_workers": 1,
  "default_site": "hardik.com",
+ "developer_mode": 1,
  "file_watcher_port": 6787,
  "frappe_user": "hardikvyas",
  "gunicorn_workers": 9,
