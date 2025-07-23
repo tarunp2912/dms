@@ -5,6 +5,7 @@
     primary-message="No OCR files yet"
     secondary-message="Upload a file to get started."
     :action-items="ocrActions"
+    :delete-ocr-files="deleteOcrFiles"
   />
   <div class="absolute top-2 right-4 z-10">
     <button
@@ -120,19 +121,17 @@ async function fetchOcrFiles() {
 }
 
 async function deleteOcrFiles(selectedFiles) {
-  await fetch("/api/method/dms.api.files.remove_or_restore", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "X-Frappe-CSRF-Token":
-        window.csrf_token || (window.frappe && frappe.csrf_token),
-    },
-    body: JSON.stringify({
-      entity_names: selectedFiles.map((f) => f.name),
-      team: null,
-      ocr: true,
-    }),
-  })
+  for (const file of selectedFiles) {
+    await fetch("/api/method/dms.api.ocr.delete", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Frappe-CSRF-Token":
+          window.csrf_token || (window.frappe && frappe.csrf_token),
+      },
+      body: JSON.stringify({ name: file.name }),
+    })
+  }
   await fetchOcrFiles()
 }
 

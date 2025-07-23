@@ -121,6 +121,7 @@ const props = defineProps({
   primaryMessage: String,
   secondaryMessage: { type: String, default: "" },
   getEntities: Object,
+  deleteOcrFiles: { type: Function, default: null }, // <-- add this line
 })
 const route = useRoute()
 const store = useStore()
@@ -305,7 +306,31 @@ const actionItems = computed(() => {
       {
         label: __("Delete"),
         icon: LucideTrash,
-        action: () => (dialog.value = "remove"),
+        action: (entities) => {
+          if (route.name === "OCR") {
+            toast({
+              title: "Delete Permanently",
+              text: "This will permanently delete the selected OCR file(s). This action cannot be undone.",
+              buttons: [
+                {
+                  label: "Delete",
+                  danger: true,
+                  action: () => {
+                    if (props.deleteOcrFiles) {
+                      props.deleteOcrFiles(entities || selectedEntitities.value)
+                    }
+                  },
+                },
+                {
+                  label: "Cancel",
+                  action: () => {},
+                },
+              ],
+            })
+          } else {
+            dialog.value = "remove"
+          }
+        },
         isEnabled: (e) => e.write,
         important: true,
         multi: true,

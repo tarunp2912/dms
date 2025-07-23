@@ -72,6 +72,35 @@ def upload():
     doc.ocr_text = ocr_text
     doc.insert()
     frappe.db.commit()
+
+    # --- Auto-create OCR folder in Team and add file reference ---
+    team_name = "Your DMS"  # TODO: Replace with dynamic team logic if needed
+    # 1. Ensure OCR folder exists in Team
+    ocr_folder = frappe.db.get_value("DMS File", {"title": "OCR", "team": team_name, "is_group": 1, "is_active": 1})
+    if not ocr_folder:
+        ocr_folder_doc = frappe.get_doc({
+            "doctype": "DMS File",
+            "title": "OCR",
+            "team": team_name,
+            "is_group": 1,
+            "is_active": 1,
+        })
+        ocr_folder_doc.insert()
+        ocr_folder = ocr_folder_doc.name
+    # 2. Create a DMS File entry in the OCR folder, referencing the OCR file
+    dms_file = frappe.get_doc({
+        "doctype": "DMS File",
+        "title": file_name,
+        "team": team_name,
+        "parent_entity": ocr_folder,
+        "file_url": file_doc.file_url,
+        "is_group": 0,
+        "is_active": 1,
+        # Optionally add a custom field to reference the OCR doc if needed
+    })
+    dms_file.insert()
+    # --- End auto-create logic ---
+
     return {"name": doc.name, "url": file_doc.file_url, "is_active": doc.is_active}
 
 
@@ -115,3 +144,11 @@ def list():
 def get_result(name):
     doc = frappe.get_doc("DMS OCR", name)
     return {"text": getattr(doc, "ocr_text", ""), "image_url": doc.file_url}
+
+
+@frappe.whitelist()
+def delete(name):
+    doc = frappe.get_doc("DMS OCR", name)
+    doc.delete()
+    frappe.db.commit()
+    return {"status": "deleted", "name": name}

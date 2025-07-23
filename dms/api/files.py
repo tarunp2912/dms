@@ -737,11 +737,9 @@ def remove_or_restore(entity_names, team=None, ocr=False):
         frappe.throw(f"Expected list but got {type(entity_names)}", ValueError)
 
     if ocr:
-        # OCR logic: delete or restore from OCR File table
+        # OCR logic: permanently delete from OCR File table
         for entity in entity_names:
-            doc = frappe.get_doc("DMS OCR", entity)
-            doc.is_active = 0
-            doc.save()
+            frappe.delete_doc("DMS OCR", entity, ignore_permissions=True)
         return  # <--- THIS IS CRITICAL
 
     storage_data = storage_bar_data(team)

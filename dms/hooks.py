@@ -80,8 +80,8 @@ add_to_apps_screen = [
 # ------------
 
 # before_install = "dms.install.before_install"
-after_install = "dms.install.after_install"
-install_requirements = "dms.install.install_requirements"
+# after_install = "dms.install.after_install"
+after_install = "dms.install.install_requirements"
 
 # Uninstallation
 # ------------
@@ -131,7 +131,6 @@ has_permission = {
 
 # fixtures = [{"dt": "Role", "filters": [["role_name", "like", "DMS %"]]}]
 # fixtures = ["DocType"]
-
 
 
 # Scheduled Tasks
