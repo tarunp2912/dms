@@ -18,7 +18,7 @@
 
   <input
     type="file"
-    accept=".doc,.docx,.pdf,.png"
+    accept=".doc,.docx,.pdf,.png, .jpg, .jpeg"
     ref="fileInput"
     @change="onFileChange"
     class="hidden"

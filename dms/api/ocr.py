@@ -7,6 +7,7 @@ from frappe.utils import cint
 import os
 from frappe.utils import formatdate, now_datetime
 from frappe.utils import format_datetime
+from dms.utils.files import FileManager
 
 
 @frappe.whitelist(allow_guest=True, methods=["POST"])
@@ -26,7 +27,17 @@ def upload():
     file_name = file.filename
     content = file.read()
     file_size = len(content)  # Get file size in bytes
-    file_doc = save_file(file_name, content, None, None, is_private=0)
+
+    # Save file to cloud (S3) or local, like team section
+    team = frappe.db.get_value("DMS Team", {}, "name")
+    manager = FileManager()
+    # Use a path similar to team uploads
+    file_path = f"{team}/ocr/{file_name}"
+    temp_file_path = f"/tmp/{file_name}"
+    with open(temp_file_path, "wb") as f:
+        f.write(content)
+    manager.upload_file(temp_file_path, file_path)
+    file_url = f"/files/{file_path}"
 
     # OCR/TEXT extraction logic
     try:
@@ -66,42 +77,15 @@ def upload():
     doc.file_name = file_name
     doc.owner = frappe.session.user
     doc.is_active = 1
-    doc.file_url = file_doc.file_url
+    doc.file_url = file_url
     doc.uploaded_on = now()
     doc.file_size = file_size  # Store file size
     doc.ocr_text = ocr_text
+    if team:
+        doc.team = team
     doc.insert()
     frappe.db.commit()
-
-    # --- Auto-create OCR folder in Team and add file reference ---
-    team_name = "Your DMS"  # TODO: Replace with dynamic team logic if needed
-    # 1. Ensure OCR folder exists in Team
-    ocr_folder = frappe.db.get_value("DMS File", {"title": "OCR", "team": team_name, "is_group": 1, "is_active": 1})
-    if not ocr_folder:
-        ocr_folder_doc = frappe.get_doc({
-            "doctype": "DMS File",
-            "title": "OCR",
-            "team": team_name,
-            "is_group": 1,
-            "is_active": 1,
-        })
-        ocr_folder_doc.insert()
-        ocr_folder = ocr_folder_doc.name
-    # 2. Create a DMS File entry in the OCR folder, referencing the OCR file
-    dms_file = frappe.get_doc({
-        "doctype": "DMS File",
-        "title": file_name,
-        "team": team_name,
-        "parent_entity": ocr_folder,
-        "file_url": file_doc.file_url,
-        "is_group": 0,
-        "is_active": 1,
-        # Optionally add a custom field to reference the OCR doc if needed
-    })
-    dms_file.insert()
-    # --- End auto-create logic ---
-
-    return {"name": doc.name, "url": file_doc.file_url, "is_active": doc.is_active}
+    return {"name": doc.name, "url": file_url, "is_active": doc.is_active}
 
 
 @frappe.whitelist()

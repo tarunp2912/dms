@@ -1,7 +1,7 @@
 {
   "actions": [],
   "allow_rename": 1,
-  "creation": "2025-07-16 15:51:23.571841",
+  "creation": "2025-07-24 22:10:48.285384",
   "doctype": "DocType",
   "engine": "InnoDB",
   "field_order": [
@@ -10,7 +10,8 @@
     "uploaded_on",
     "file_size",
     "is_active",
-    "ocr_text"
+    "ocr_text",
+    "team"
   ],
   "fields": [
     {
@@ -43,12 +44,17 @@
       "fieldname": "ocr_text",
       "fieldtype": "Long Text",
       "label": "ocr_text"
+    },
+    {
+      "fieldname": "team",
+      "fieldtype": "Data",
+      "label": "team"
     }
   ],
   "grid_page_length": 50,
   "index_web_pages_for_search": 1,
   "links": [],
-  "modified": "2025-07-21 20:43:18.796833",
+  "modified": "2025-07-24 22:20:42.201840",
   "modified_by": "Administrator",
   "module": "DMS",
   "name": "DMS OCR",
