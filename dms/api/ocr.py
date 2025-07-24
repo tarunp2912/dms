@@ -88,7 +88,6 @@ def upload():
     return {"name": doc.name, "url": file_url, "is_active": doc.is_active}
 
 
-
 @frappe.whitelist()
 def list():
     files = frappe.get_all(
