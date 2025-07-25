@@ -20,6 +20,7 @@ dependencies = [
     "PyPDF2",
     "python-docx",
     "black",
+    "pytesseract",
 ]
 
 [build-system]
