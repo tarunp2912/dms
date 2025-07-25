@@ -33,6 +33,7 @@ def upload():
 
     # Save file using FileManager (S3/cloud logic if enabled)
     import tempfile
+
     with tempfile.NamedTemporaryFile(delete=False, suffix="_ocr_upload") as tmp:
         tmp.write(content)
         tmp_path = tmp.name
@@ -75,6 +76,7 @@ def upload():
             ocr_text = "Unsupported file type."
     except Exception as e:
         import traceback
+
         ocr_text = f"OCR error: {e}\n{traceback.format_exc()}"
     finally:
         try:
