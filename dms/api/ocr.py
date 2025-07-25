@@ -28,37 +28,45 @@ def upload():
     content = file.read()
     file_size = len(content)  # Get file size in bytes
 
-    # Save file to cloud (S3) or local, like team section
+    # Always fetch the team name for saving in the OCR table
     team = frappe.db.get_value("DMS Team", {}, "name")
+
+    # Save file using FileManager (S3/cloud logic if enabled)
+    import tempfile
+    with tempfile.NamedTemporaryFile(delete=False, suffix="_ocr_upload") as tmp:
+        tmp.write(content)
+        tmp_path = tmp.name
+    # Use team name as folder, and file_name as key
+    s3_path = f"{team}/ocr/{file_name}" if team else f"ocr/{file_name}"
     manager = FileManager()
-    # Use a path similar to team uploads
-    file_path = f"{team}/ocr/{file_name}"
-    temp_file_path = f"/tmp/{file_name}"
-    with open(temp_file_path, "wb") as f:
-        f.write(content)
-    manager.upload_file(temp_file_path, file_path)
-    file_url = f"/files/{file_path}"
+    manager.upload_file(tmp_path, s3_path)
+    # Build file_url for S3 or local
+    if manager.s3_enabled:
+        settings = frappe.get_single("DMS S3 Settings")
+        file_url = f"{settings.endpoint_url.rstrip('/')}/{settings.bucket}/{s3_path}"
+    else:
+        file_url = f"/private/files/{s3_path}"
 
     # OCR/TEXT extraction logic
     try:
         ext = file_name.lower().split(".")[-1]
-        with tempfile.NamedTemporaryFile(delete=False, suffix="." + ext) as tmp:
-            tmp.write(content)
-            tmp_path = tmp.name
+        with tempfile.NamedTemporaryFile(delete=False, suffix="." + ext) as tmp2:
+            tmp2.write(content)
+            tmp2_path = tmp2.name
         if ext == "pdf":
             from PyPDF2 import PdfReader
 
-            reader = PdfReader(tmp_path)
+            reader = PdfReader(tmp2_path)
             ocr_text = "\n".join([page.extract_text() or "" for page in reader.pages])
         elif ext == "docx":
             from docx import Document
 
-            doc = Document(tmp_path)
-            ocr_text = "\n".join([para.text for para in doc.paragraphs])
+            docx_doc = Document(tmp2_path)
+            ocr_text = "\n".join([para.text for para in docx_doc.paragraphs])
         elif ext in ["png", "jpg", "jpeg", "bmp", "tiff"]:
             import cv2, pytesseract
 
-            image = cv2.imread(tmp_path)
+            image = cv2.imread(tmp2_path)
             if image is not None:
                 ocr_text = pytesseract.image_to_string(image)
             else:
@@ -66,8 +74,13 @@ def upload():
         else:
             ocr_text = "Unsupported file type."
     except Exception as e:
+        import traceback
         ocr_text = f"OCR error: {e}\n{traceback.format_exc()}"
     finally:
+        try:
+            os.remove(tmp2_path)
+        except Exception:
+            pass
         try:
             os.remove(tmp_path)
         except Exception:
