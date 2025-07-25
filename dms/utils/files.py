@@ -114,7 +114,15 @@ class FileManager:
 
     def __init__(self):
         settings = frappe.get_single("DMS S3 Settings")
-        self.s3_enabled = settings.enabled
+        # Only enable S3 if all required fields are present and non-empty
+        self.s3_enabled = (
+            getattr(settings, "enabled", False)
+            and getattr(settings, "bucket", None)
+            and getattr(settings, "aws_key", None)
+            and settings.get_password("aws_secret")
+            and getattr(settings, "endpoint_url", None)
+            and getattr(settings, "signature_version", None)
+        )
         self.bucket = settings.bucket
         self.site_folder = Path(frappe.get_site_path("private/files"))
         if self.s3_enabled:
@@ -151,14 +159,17 @@ class FileManager:
             else:
                 os.remove(current_path)
         else:
-            os.rename(current_path, self.site_folder / new_path)
+            # Ensure the target directory exists before moving
+            target_path = self.site_folder / new_path
+            os.makedirs(target_path.parent, exist_ok=True)
+            os.rename(current_path, target_path)
             if dms_file and self.can_create_thumbnail(dms_file):
                 frappe.enqueue(
                     self.upload_thumbnail,
                     now=True,
                     at_front=True,
                     file=dms_file,
-                    file_path=str(self.site_folder / new_path),
+                    file_path=str(target_path),
                 )
 
     def upload_thumbnail(self, file, file_path: str):
