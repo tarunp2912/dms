@@ -6,6 +6,8 @@ with open("requirements.txt") as f:
 # get version from __version__ variable in dms/__init__.py
 from dms import __version__ as version
 
+print("📦 DMS setup.py running — installing:", install_requires)
+
 setup(
 	name="dms",
 	version=version,
